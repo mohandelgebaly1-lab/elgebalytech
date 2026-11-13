@@ -1930,9 +1930,14 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
 
         // إرسال النموذج مباشرة عبر Formspree إلى البريد الإلكتروني
 const surveyForm = document.getElementById('survey-form');
-const formMessage = document.getElementById('form-message');
 
 if (surveyForm) {
+    // إنشاء عنصر الرسالة وتجهيزه تلقائياً تحت الفورم
+    let formMessage = document.createElement('div');
+    formMessage.id = 'form-message';
+    formMessage.className = 'mt-4 hidden p-4 rounded-xl text-center font-bold text-sm';
+    surveyForm.appendChild(formMessage);
+
     surveyForm.addEventListener('submit', async function(e) {
         e.preventDefault();
         
@@ -1948,6 +1953,30 @@ if (surveyForm) {
             });
             
             if (response.ok) {
+                // إظهار رسالة النجاح باللون الأخضر تحت الأزرار
+                formMessage.textContent = 'تم إرسال طلبك بنجاح! سنتواصل معك قريباً.';
+                formMessage.className = 'mt-4 p-4 rounded-xl text-center font-bold text-sm bg-emerald-500/10 text-emerald-400 border border-emerald-500/20';
+                formMessage.classList.remove('hidden');
+                
+                surveyForm.reset(); // مسح الحقول بعد الإرسال
+                
+                // إخفاء الرسالة بعد 6 ثواني
+                setTimeout(() => {
+                    formMessage.classList.add('hidden');
+                }, 6000);
+            } else {
+                formMessage.textContent = 'حدث خطأ أثناء إرسال الطلب، يرجى المحاولة مرة أخرى.';
+                formMessage.className = 'mt-4 p-4 rounded-xl text-center font-bold text-sm bg-rose-500/10 text-rose-400 border border-rose-500/20';
+                formMessage.classList.remove('hidden');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            formMessage.textContent = 'تعذر الاتصال، تأكد من اتصالك بالإنترنت.';
+            formMessage.className = 'mt-4 p-4 rounded-xl text-center font-bold text-sm bg-rose-500/10 text-rose-400 border border-rose-500/20';
+            formMessage.classList.remove('hidden');
+        }
+    });
+}
                 // إظهار رسالة النجاح مكان العنصر الجديد تحت الفورم
                 if (formMessage) {
                     formMessage.textContent = 'تم إرسال طلبك بنجاح! سنتواصل معك قريباً.';
