@@ -1304,7 +1304,7 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
                     <p class="text-slate-400 text-sm mt-2">املأ البيانات التالية وسيتواصل معك القسم الهندسي لدينا خلال ساعات.</p>
                 </div>
 
-                <form id="survey-form" class="space-y-5">
+            <form id="survey-form" action="https://formspree.io/f/mgakoale" method="POST">
                     <div class="grid sm:grid-cols-2 gap-5">
                         <div>
                             <label class="block text-xs font-bold text-slate-300 mb-2">الاسم أو اسم النشاط التجاري *</label>
@@ -1931,7 +1931,6 @@ if (surveyForm) {
     surveyForm.action = "https://formspree.io/f/mgakoale";
     surveyForm.method = "POST";
 }
-
         // ================= دوال لوحة تحكم الإدارة =================
         function closeAdminAuth() {
             document.getElementById('admin-pin-modal').classList.add('hidden');
