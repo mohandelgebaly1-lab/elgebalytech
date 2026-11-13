@@ -1295,59 +1295,62 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
     </section>
 
     <!-- ================= قسم التواصل وطلب المعاينة (Contact Form) ================= -->
-    <section id="contact" class="py-20 bg-slate-950 border-t border-slate-800">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="rounded-3xl bg-slate-900 border border-slate-800 p-6 sm:p-10 shadow-2xl">
-                <div class="text-center mb-8">
-                    <span class="text-sky-400 font-bold text-sm">ابدأ تأمين مكانك اليوم</span>
-                    <h2 class="text-2xl sm:text-3xl font-black text-white mt-2">احجز معاينة مجانية أو اطلب عرض سعر</h2>
-                    <p class="text-slate-400 text-sm mt-2">املأ البيانات التالية وسيتواصل معك القسم الهندسي لدينا خلال ساعات.</p>
+   <section id="contact" class="py-20 bg-slate-950 border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl bg-slate-900 border border-slate-800 p-6 sm:p-10 shadow-2xl">
+            <div class="text-center mb-8">
+                <span class="text-sky-400 font-bold text-sm">ابدأ تأمين مكانك اليوم</span>
+                <h2 class="text-2xl sm:text-3xl font-black text-white mt-2">احجز معاينة مجانية أو اطلب عرض سعر</h2>
+                <p class="text-slate-400 text-sm mt-2">املأ البيانات التالية وسيتواصل معك القسم الهندسي لدينا خلال ساعات.</p>
+            </div>
+
+            <form id="survey-form" action="https://formspree.io/f/mgakoale" method="POST">
+                <div class="grid sm:grid-cols-2 gap-5">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-2">الاسم أو اسم النشاط التجاري *</label>
+                        <input type="text" name="client_name" id="client-name" required placeholder="مثال: صيدلية الشفاء / أ. محمود" class="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-sky-500">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-2">رقم الهاتف / الواتساب *</label>
+                        <input type="tel" name="client_phone" id="client-phone" required placeholder="01xxxxxxxxx" class="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-sky-500 text-left" dir="ltr">
+                    </div>
                 </div>
 
-          <form id="survey-form" action="https://formspree.io/f/mgakoale" method="POST">
-                    <div class="grid sm:grid-cols-2 gap-5">
-                        <div>
-                            <label class="block text-xs font-bold text-slate-300 mb-2">الاسم أو اسم النشاط التجاري *</label>
-                            <input type="text" id="client-name" required="" placeholder="مثال: صيدلية الشفاء / أ. محمود" class="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-sky-500">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-slate-300 mb-2">رقم الهاتف / الواتساب *</label>
-                            <input type="tel" id="client-phone" required="" placeholder="01xxxxxxxxx" class="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-sky-500 text-left" dir="ltr">
-                        </div>
-                    </div>
-
-                    <div class="grid sm:grid-cols-2 gap-5">
-                        <div>
-                            <label class="block text-xs font-bold text-slate-300 mb-2">المنطقة / العنوان التقريبي *</label>
-                            <input type="text" id="client-location" required="" placeholder="مثال: الجيزة - الدقي / فيصل / أكتوبر" class="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-sky-500">
-                        </div>
-                        <div>
-                            <label class="block text-xs font-bold text-slate-300 mb-2">نوع الخدمة المطلوبة</label>
-                            <select id="client-service" class="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-sky-500">
-                                <option value="تركيب كاميرات مراقبة جديدة">تركيب كاميرات مراقبة جديدة</option>
-                                <option value="تأسيس شبكة إنترنت / سويتشات / راك">تأسيس شبكة إنترنت / سويتشات / راك</option>
-                                <option value="صيانة وتطوير نظام قائم">صيانة وتطوير نظام قائم</option>
-                                <option value="جهاز حضور وانصراف / أكسس كنترول">جهاز حضور وانصراف / أكسس كنترول</option>
-                            </select>
-                        </div>
-                    </div>
-
+                <div class="grid sm:grid-cols-2 gap-5 mt-5">
                     <div>
-                        <label class="block text-xs font-bold text-slate-300 mb-2">تفاصيل إضافية (عدد الكاميرات أو مساحة المكان)</label>
-                        <textarea id="client-notes" rows="3" placeholder="اكتب أي تفاصيل تساعدنا في تجهيز العرض المناسب لك..." class="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-sky-500"></textarea>
+                        <label class="block text-xs font-bold text-slate-300 mb-2">المنطقة / العنوان التقريبي *</label>
+                        <input type="text" name="client_location" id="client-location" required placeholder="مثال: الجيزة - الدقي / فيصل / أكتوبر" class="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-sky-500">
                     </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-300 mb-2">نوع الخدمة المطلوبة</label>
+                        <select name="client_service" id="client-service" class="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-sky-500">
+                            <option value="تركيب كاميرات مراقبة جديدة">تركيب كاميرات مراقبة جديدة</option>
+                            <option value="تأسيس شبكة إنترنت / سويتشات / راك">تأسيس شبكة إنترنت / سويتشات / راك</option>
+                            <option value="صيانة وتطوير نظام قائم">صيانة وتطوير نظام قائم</option>
+                            <option value="جهاز حضور وانصراف / أكسس كنترول">جهاز حضور وانصراف / أكسس كنترول</option>
+                        </select>
+                    </div>
+                </div>
 
-                    <div class="flex flex-col sm:flex-row gap-4 pt-2">
-                        <button type="submit" class="flex-1 py-4 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm transition-all shadow-lg shadow-sky-500/25 flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-paper-plane"></i>
-                            <span>تأكيد وإرسال الطلب</span>
-                        </button>
-                        <button type="button" onclick="sendViaWhatsApp()" class="flex-1 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm transition-all flex items-center justify-center gap-2">
-                            <i class="fa-brands fa-whatsapp text-lg"></i>
-                            <span>إرسال مباشرة عبر واتساب</span>
-                        </button>
-                    </div>
-                </form>
+                <div class="mt-5">
+                    <label class="block text-xs font-bold text-slate-300 mb-2">تفاصيل إضافية (عدد الكاميرات أو مساحة المكان)</label>
+                    <textarea name="client_notes" id="client-notes" rows="3" placeholder="اكتب أي تفاصيل تساعدنا في تجهيز العرض المناسب لك..." class="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-sky-500"></textarea>
+                </div>
+
+                <div class="flex flex-col sm:flex-row gap-4 pt-5">
+                    <button type="submit" class="flex-1 py-4 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm transition-all shadow-lg shadow-sky-500/25 flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span>تأكيد وإرسال الطلب</span>
+                    </button>
+                    <button type="button" onclick="sendViaWhatsApp()" class="flex-1 py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm transition-all flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>إرسال مباشرة عبر واتساب</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
 
                 <!-- رسالة تأكيد تفاعلية بدل alert -->
                 <div id="form-feedback" class="hidden mt-6 p-4 rounded-2xl bg-emerald-500/15 border border-emerald-500/40 text-emerald-300 text-sm text-center font-bold">
