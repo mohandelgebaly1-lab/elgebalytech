@@ -85,7 +85,7 @@
 
                 <!-- أزرار الإجراء -->
                 <div class="hidden md:flex items-center gap-3">
-                    <a href="https://wa.me/201013323667" target="_blank" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-emerald-600/20 border border-emerald-500/40 hover:bg-emerald-600 text-emerald-400 hover:text-white font-bold text-sm transition-all flex items-center gap-2">
+                    <a href="https://wa.me/201013323667" target="_blank" id="nav-whatsapp-btn" rel="noopener noreferrer" class="px-4 py-2.5 rounded-xl bg-emerald-600/20 border border-emerald-500/40 hover:bg-emerald-600 text-emerald-400 hover:text-white font-bold text-sm transition-all flex items-center gap-2">
                         <i class="fa-brands fa-whatsapp text-base"></i>
                         <span>واتساب مباشر</span>
                     </a>
@@ -126,12 +126,12 @@
                 <div class="lg:col-span-7 text-center lg:text-right space-y-6">
                     <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-xs sm:text-sm font-bold">
                         <span class="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
-                        <span>حلول متكاملة للشركات، المصانع، المحلات، والمنازل — خصم خاص للمعاينات الجديدة</span>
+                        <span id="hero-promo-text">حلول متكاملة للشركات، المصانع، المحلات، والمنازل — خصم خاص للمعاينات الجديدة</span>
                     </div>
 
-                    <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">أمّن منشأتك بأحدث أنظمة المراقبة والشبكات</h1>
+                    <h1 id="hero-headline-display" class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight">أمّن منشأتك بأحدث أنظمة المراقبة والشبكات</h1>
 
-                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">نقدم حلولاً هندسية متكاملة لتوريد وتركيب كاميرات المراقبة عالية الدقة (IP &amp; Analog)، وتأسيس شبكات الإنترنت والسويتشات الاحترافية، مع ضمان حقيقي وخدمة صيانة سريعة في القاهرة والجيزة.</p>
+                    <p id="hero-subheadline-display" class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0">نقدم حلولاً هندسية متكاملة لتوريد وتركيب كاميرات المراقبة عالية الدقة (IP &amp; Analog)، وتأسيس شبكات الإنترنت والسويتشات الاحترافية، مع ضمان حقيقي وخدمة صيانة سريعة في القاهرة والجيزة.</p>
 
                     <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
                         <a href="#contact" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-base transition-all shadow-lg shadow-sky-500/30 flex items-center justify-center gap-2">
@@ -397,73 +397,8 @@
                 <p class="text-slate-400 text-sm sm:text-base">جميع الباقات تشمل التوريد، التركيب النظيف، البرمجة على الموبايل، وضمان لمدة عام كامل.</p>
             </div>
 
-            <div class="grid lg:grid-cols-3 gap-8">
-                <!-- الباقة 1 -->
-                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col justify-between card-hover">
-                    <div>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs font-bold">بداية ذكية</span>
-                            <span class="text-xs font-bold text-sky-400">اطلب السعر المخفض</span>
-                        </div>
-                        <h3 class="text-2xl font-black text-white mb-2">باقة المحلات والعيادات</h3>
-                        <p class="text-slate-400 text-sm mb-6">مثالية للمحلات التجارية، الصيدليات، العيادات، والشقق السكنية.</p>
-                        <ul class="space-y-3.5 text-sm text-slate-300 mb-8">
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> 4 كاميرات عالية الدقة (داخلية / خارجية)</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> جهاز تسجيل DVR 4 قنوات حديث</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> هارد ديسك مخصص للمراقبة 1TB</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> باور سبلاي ومستلزمات التوصيل كاملة</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> ربط المشاهدة الحية على هاتفك مجاناً</li>
-                        </ul>
-                    </div>
-                    <a href="#contact" onclick="selectPackage('باقة المحلات والعيادات')" class="block text-center py-3.5 rounded-xl bg-slate-800 hover:bg-sky-500 hover:text-slate-950 text-white font-extrabold text-sm transition-all">
-                        استفسر عن سعر الباقة
-                    </a>
-                </div>
-
-                <!-- الباقة 2 -->
-                <div class="p-8 rounded-3xl bg-gradient-to-b from-slate-900 to-[#0B192C] border-2 border-sky-500 flex flex-col justify-between relative shadow-2xl shadow-sky-500/15">
-                    <div class="absolute -top-4 right-8 px-4 py-1 rounded-full bg-sky-500 text-slate-950 text-xs font-black">الأكثر طلباً للشركات</div>
-                    <div>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="px-3 py-1 rounded-lg bg-sky-500/20 text-sky-400 text-xs font-bold">عرض خاص للشركات</span>
-                            <i class="fa-solid fa-building text-2xl text-sky-400"></i>
-                        </div>
-                        <h3 class="text-2xl font-black text-white mb-2">باقة الشركات والمكاتب</h3>
-                        <p class="text-slate-300 text-sm mb-6">تغطية شاملة للمكاتب الإدارية، الحضانات، المطاعم، والسوبر ماركت.</p>
-                        <ul class="space-y-3.5 text-sm text-slate-200 mb-8">
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> 8 كاميرات IP أو HD فائقة الوضوح</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> تقنية الرؤية الليلية الملونة والتقاط الصوت</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> جهاز تسجيل 8 قنوات + هارد 2TB</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> تنظيم الأسلاك داخل بوكس أو راك احترافي</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> زيارة صيانة مجانية بعد 3 أشهر</li>
-                        </ul>
-                    </div>
-                    <a href="#contact" onclick="selectPackage('باقة الشركات والمكاتب')" class="block text-center py-3.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm transition-all shadow-lg shadow-sky-500/25">
-                        اطلب عرض سعر للباقة
-                    </a>
-                </div>
-
-                <!-- الباقة 3 -->
-                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col justify-between card-hover">
-                    <div>
-                        <div class="flex justify-between items-center mb-4">
-                            <span class="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs font-bold">مشاريع كبرى</span>
-                            <span class="text-xs font-bold text-sky-400">مقايسة هندسية خاصة</span>
-                        </div>
-                        <h3 class="text-2xl font-black text-white mb-2">باقة المصانع والمخازن</h3>
-                        <p class="text-slate-400 text-sm mb-6">حلول هندسية مخصصة للمساحات الواسعة، المجمعات السكنية، والمستودعات.</p>
-                        <ul class="space-y-3.5 text-sm text-slate-300 mb-8">
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> من 16 إلى 64 كاميرا IP بعيدة المدى</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> سويتشات PoE ذكية وكبائن Racks كاملة</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> ربط الفروع ببعضها وتأمين الشبكة</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> سعات تخزين ضخمة (4TB - 16TB)</li>
-                            <li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> عقد صيانة سنوي ودعم فني ذو أولوية</li>
-                        </ul>
-                    </div>
-                    <a href="#contact" onclick="selectPackage('باقة المصانع والمخازن')" class="block text-center py-3.5 rounded-xl bg-slate-800 hover:bg-sky-500 hover:text-slate-950 text-white font-extrabold text-sm transition-all">
-                        استفسر عن سعر الباقة
-                    </a>
-                </div>
+            <div id="packages-container" class="grid lg:grid-cols-3 gap-8">
+                <!-- يتم تعبئة الباقات ديناميكياً -->
             </div>
         </div>
     </section>
@@ -477,39 +412,8 @@
                 <p class="text-slate-400 text-sm sm:text-base">نماذج حية من دقة التقفيل وتنظيم الكابلات وتركيب الكاميرات في المحلات والشركات.</p>
             </div>
 
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden card-hover flex flex-col justify-between">
-                    <div class="h-52 bg-slate-950 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="تأسيس شبكة وراك سيرفرات متكامل" onerror="this.src='https://placehold.co/600x400/0f172a/38bdf8?text=Elgebaly+Tech'" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-slate-950/85 border border-slate-700 text-sky-400 text-xs font-bold">بنية شبكات وتنظيم Racks</span>
-                    </div>
-                    <div class="p-6 space-y-2">
-                        <h3 class="text-lg font-extrabold text-white">تأسيس شبكة وراك سيرفرات متكامل</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed">تجميع وتنظيم كابلات Cat6 وتركيب سويتشات PoE احترافية لشركة إدارية.</p>
-                    </div>
-                </div>
-            
-                <div class="rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden card-hover flex flex-col justify-between">
-                    <div class="h-52 bg-slate-950 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="منظومة كاميرات مراقبة خارجية 4K" onerror="this.src='https://placehold.co/600x400/0f172a/38bdf8?text=Elgebaly+Tech'" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-slate-950/85 border border-slate-700 text-sky-400 text-xs font-bold">أنظمة المراقبة الأمنية</span>
-                    </div>
-                    <div class="p-6 space-y-2">
-                        <h3 class="text-lg font-extrabold text-white">منظومة كاميرات مراقبة خارجية 4K</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed">تغطية شاملة للمداخل والمحيط الخارجي بكاميرات مقاومة للعوامل الجوية ورؤية ليلية ملونة.</p>
-                    </div>
-                </div>
-            
-                <div class="rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden card-hover flex flex-col justify-between">
-                    <div class="h-52 bg-slate-950 overflow-hidden relative">
-                        <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="تأمين صيدلية ومخزن أدوية" onerror="this.src='https://placehold.co/600x400/0f172a/38bdf8?text=Elgebaly+Tech'" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
-                        <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-slate-950/85 border border-slate-700 text-sky-400 text-xs font-bold">حلول المتاجر والصيدليات</span>
-                    </div>
-                    <div class="p-6 space-y-2">
-                        <h3 class="text-lg font-extrabold text-white">تأمين صيدلية ومخزن أدوية</h3>
-                        <p class="text-xs text-slate-400 leading-relaxed">تركيب كاميرات داخلية عالية الوضوح مع تسجيل صوتي وربط مباشر على هاتف الإدارة.</p>
-                    </div>
-                </div>
+            <div id="portfolio-container" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- يتم تعبئة الأعمال ديناميكياً -->
             </div>
         </div>
     </section>
@@ -666,9 +570,9 @@
 
                 <div class="space-y-2">
                     <h4 class="font-bold text-white mb-3">نطاق الخدمة ومواعيد العمل</h4>
-                    <p class="text-xs"><i class="fa-solid fa-location-dot text-sky-400 ml-2"></i>نغطي جميع مناطق الجيزة والقاهرة الكبرى</p>
-                    <p class="text-xs"><i class="fa-solid fa-clock text-sky-400 ml-2"></i>السبت - الخميس: 10:00 صباحاً حتى 10:00 مساءً</p>
-                    <p class="text-xs" dir="ltr"><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i>01013323667</p>
+                    <p class="text-xs"><i class="fa-solid fa-location-dot text-sky-400 ml-2"></i><span id="footer-location-display">نغطي جميع مناطق الجيزة والقاهرة الكبرى</span></p>
+                    <p class="text-xs"><i class="fa-solid fa-clock text-sky-400 ml-2"></i><span id="footer-hours-display">السبت - الخميس: 10:00 صباحاً حتى 10:00 مساءً</span></p>
+                    <p class="text-xs" dir="ltr"><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i><span id="footer-phone-display">01013323667</span></p>
                 </div>
 
                 <div class="space-y-3">
@@ -677,7 +581,7 @@
                         <a href="#contact" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-sky-500 hover:text-slate-950 flex items-center justify-center transition-colors">
                             <i class="fa-brands fa-facebook-f"></i>
                         </a>
-                        <a href="https://wa.me/201013323667" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-emerald-500 hover:text-white flex items-center justify-center transition-colors">
+                        <a href="https://wa.me/201013323667" target="_blank" id="footer-whatsapp-link" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-emerald-500 hover:text-white flex items-center justify-center transition-colors">
                             <i class="fa-brands fa-whatsapp"></i>
                         </a>
                         <a href="#contact" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-sky-500 hover:text-slate-950 flex items-center justify-center transition-colors">
@@ -694,13 +598,339 @@
     </footer>
 
     <!-- زر واتساب عائم لسهولة تواصل العملاء -->
-    <a href="https://wa.me/201013323667?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Elgebaly%20Tech%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%83%D8%A7%D9%85%D9%8A%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D9%82%D8%A8%D8%A9%20%D9%88%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA" target="_blank" rel="noopener noreferrer" aria-label="تواصل عبر واتساب" class="fixed bottom-6 left-6 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white shadow-xl shadow-emerald-500/30 flex items-center justify-center text-2xl transition-transform hover:scale-110">
+    <a href="https://wa.me/201013323667?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Elgebaly%20Tech%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%83%D8%A7%D9%85%D9%8A%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D9%82%D8%A8%D8%A9%20%D9%88%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA" target="_blank" id="floating-whatsapp-btn" rel="noopener noreferrer" aria-label="تواصل عبر واتساب" class="fixed bottom-6 left-6 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white shadow-xl shadow-emerald-500/30 flex items-center justify-center text-2xl transition-transform hover:scale-110">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
-    <!-- ================= الأكواد البرمجية للتفاعل وإرسال الطلب ================= -->
+    <!-- ================= نافذة التحقق من رمز الإدارة (تفتح بـ Ctrl + Shift + M) ================= -->
+    <div id="admin-pin-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden">
+        <div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-sm w-full p-6 space-y-5 shadow-2xl">
+            <div class="flex items-center justify-between border-b border-slate-800 pb-3">
+                <h3 class="text-lg font-black text-white flex items-center gap-2">
+                    <i class="fa-solid fa-shield-halved text-sky-400"></i>
+                    <span>دخول لوحة تحكم الإدارة</span>
+                </h3>
+                <button type="button" onclick="closeAdminAuth()" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark text-lg"></i></button>
+            </div>
+            <p class="text-xs text-slate-400">أدخل رمز الدخول السري (الرمز الافتراضي: <span class="text-sky-400 font-mono font-bold">1234</span>)</p>
+            <input type="password" id="admin-pin-input" maxlength="8" placeholder="••••" class="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-700 text-center text-white text-xl tracking-widest font-mono focus:outline-none focus:border-sky-500">
+            <p id="pin-error-msg" class="hidden text-xs text-rose-400 font-bold text-center">رمز الدخول غير صحيح، حاول مرة أخرى.</p>
+            <button type="button" onclick="verifyAdminPin()" class="w-full py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm transition-all">
+                فتح لوحة التحكم
+            </button>
+        </div>
+    </div>
+
+    <!-- ================= لوحة تحكم الإدارة الكاملة (Admin Control Panel) ================= -->
+    <div id="admin-panel-modal" class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-md overflow-y-auto hidden">
+        <div class="max-w-6xl mx-auto px-4 py-8">
+            <div class="flex flex-wrap items-center justify-between gap-4 bg-slate-900 border border-slate-800 p-5 rounded-2xl mb-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-xl bg-sky-500 text-slate-950 flex items-center justify-center font-black">
+                        <i class="fa-solid fa-sliders"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-lg sm:text-xl font-black text-white">لوحة تحكم Elgebaly Tech</h2>
+                        <p class="text-xs text-slate-400">تحكم كامل في الأسعار، العروض، معرض الأعمال، وبيانات التواصل</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap items-center gap-2">
+                    <button type="button" onclick="exportStandaloneHTML()" class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-2 transition-all">
+                        <i class="fa-solid fa-download"></i>
+                        <span>تصدير ملف الموقع HTML</span>
+                    </button>
+                    <button type="button" onclick="resetAdminData()" class="px-4 py-2.5 rounded-xl bg-rose-500/15 border border-rose-500/40 hover:bg-rose-500 text-rose-300 hover:text-white font-bold text-xs transition-all">
+                        استعادة الافتراضي
+                    </button>
+                    <button type="button" onclick="closeAdminPanel()" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs">
+                        إغلاق <i class="fa-solid fa-xmark mr-1"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="admin-toast" class="hidden mb-6 p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/50 text-emerald-300 text-sm font-bold text-center">
+                تم حفظ وتطبيق التغييرات على الموقع بنجاح!
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-6">
+                <div class="lg:col-span-3 space-y-2">
+                    <button type="button" onclick="switchAdminTab('general')" id="tab-btn-general" class="admin-tab-btn w-full text-right p-3.5 rounded-xl text-sm flex items-center gap-2 bg-sky-500 text-slate-950 font-extrabold">
+                        <i class="fa-solid fa-address-card"></i>
+                        <span>بيانات التواصل والواجهة</span>
+                    </button>
+                    <button type="button" onclick="switchAdminTab('packages')" id="tab-btn-packages" class="admin-tab-btn w-full text-right p-3.5 rounded-xl hover:bg-slate-800 text-sm flex items-center gap-2 bg-slate-900 border border-slate-800 text-slate-300 font-bold">
+                        <i class="fa-solid fa-tags"></i>
+                        <span>إدارة الباقات والأسعار</span>
+                    </button>
+                    <button type="button" onclick="switchAdminTab('portfolio')" id="tab-btn-portfolio" class="admin-tab-btn w-full text-right p-3.5 rounded-xl hover:bg-slate-800 text-sm flex items-center gap-2 bg-slate-900 border border-slate-800 text-slate-300 font-bold">
+                        <i class="fa-solid fa-images"></i>
+                        <span>معرض الأعمال السابقة</span>
+                    </button>
+                    <button type="button" onclick="switchAdminTab('security')" id="tab-btn-security" class="admin-tab-btn w-full text-right p-3.5 rounded-xl hover:bg-slate-800 text-sm flex items-center gap-2 bg-slate-900 border border-slate-800 text-slate-300 font-bold">
+                        <i class="fa-solid fa-key"></i>
+                        <span>تغيير رمز الدخول (PIN)</span>
+                    </button>
+                </div>
+
+                <div class="lg:col-span-9 bg-slate-900 border border-slate-800 rounded-2xl p-6">
+                    <!-- 1. البيانات العامة -->
+                    <div id="admin-tab-general" class="admin-tab-content space-y-5">
+                        <h3 class="text-lg font-black text-white border-b border-slate-800 pb-3">تعديل بيانات التواصل والنصوص الرئيسية</h3>
+                        
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-2">رقم الواتساب (بالصيغة الدولية بدون +)</label>
+                                <input type="text" id="adm-whatsapp" class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm font-mono" dir="ltr">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-2">رقم الهاتف للعرض في الموقع</label>
+                                <input type="text" id="adm-phone-display" class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm font-mono" dir="ltr">
+                            </div>
+                        </div>
+
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-2">نطاق التغطية الجغرافية</label>
+                                <input type="text" id="adm-location" class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-bold text-slate-300 mb-2">مواعيد العمل</label>
+                                <input type="text" id="adm-hours" class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-2">شريط العرض الترويجي العلوي</label>
+                            <input type="text" id="adm-promo" class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-2">العنوان الرئيسي (Hero Headline)</label>
+                            <input type="text" id="adm-headline" class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-300 mb-2">الوصف التعريفي أسفل العنوان</label>
+                            <textarea id="adm-subheadline" rows="3" class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm"></textarea>
+                        </div>
+
+                        <button type="button" onclick="saveGeneralSettings()" class="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm">
+                            حفظ البيانات العامة
+                        </button>
+                    </div>
+
+                    <!-- 2. إدارة الباقات -->
+                    <div id="admin-tab-packages" class="admin-tab-content space-y-6 hidden">
+                        <h3 class="text-lg font-black text-white border-b border-slate-800 pb-3">تعديل الباقات الثلاث وأسعارها</h3>
+                        <div id="adm-packages-list" class="space-y-6"></div>
+                        <button type="button" onclick="savePackagesSettings()" class="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm">
+                            حفظ تعديلات الباقات
+                        </button>
+                    </div>
+
+                    <!-- 3. معرض الأعمال -->
+                    <div id="admin-tab-portfolio" class="admin-tab-content space-y-6 hidden">
+                        <h3 class="text-lg font-black text-white border-b border-slate-800 pb-3">إضافة وتعديل صور الأعمال السابقة</h3>
+                        
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-4">
+                            <h4 class="text-sm font-bold text-sky-400">إضافة عمل جديد للمعرض</h4>
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs text-slate-400 mb-1">عنوان المشروع</label>
+                                    <input type="text" id="new-port-title" placeholder="مثال: تركيب 8 كاميرات IP لصيدلية بالدقي" class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-sm">
+                                </div>
+                                <div>
+                                    <label class="block text-xs text-slate-400 mb-1">التصنيف</label>
+                                    <input type="text" id="new-port-cat" placeholder="مثال: كاميرات مراقبة / تنظيم راك" class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-sm">
+                                </div>
+                            </div>
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs text-slate-400 mb-1">رابط الصورة (URL) أو ارفع صورة من جهازك</label>
+                                    <input type="text" id="new-port-img" placeholder="https://..." class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-sm" dir="ltr">
+                                </div>
+                                <div>
+                                    <label class="block text-xs text-slate-400 mb-1">أو اختر ملف صورة مباشرة</label>
+                                    <input type="file" id="new-port-file" accept="image/*" onchange="handlePortfolioImageUpload(event)" class="w-full p-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 text-xs">
+                                </div>
+                            </div>
+                            <div>
+                                <label class="block text-xs text-slate-400 mb-1">وصف مختصر للتنفيذ</label>
+                                <input type="text" id="new-port-desc" placeholder="تمديد كابلات داخل مواسير حماية وربط المشاهدة على الموبايل" class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-sm">
+                            </div>
+                            <button type="button" onclick="addPortfolioItem()" class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs">
+                                <i class="fa-solid fa-plus ml-1"></i> إضافة المشروع للمعرض
+                            </button>
+                        </div>
+
+                        <div id="adm-portfolio-list" class="grid sm:grid-cols-2 gap-4"></div>
+                    </div>
+
+                    <!-- 4. الأمان -->
+                    <div id="admin-tab-security" class="admin-tab-content space-y-4 hidden">
+                        <h3 class="text-lg font-black text-white border-b border-slate-800 pb-3">تغيير رمز الدخول السري (PIN)</h3>
+                        <p class="text-xs text-slate-400">اختر رمزاً جديداً لحماية لوحة التحكم من التعديل غير المصرح به.</p>
+                        <div class="max-w-xs space-y-3">
+                            <input type="password" id="adm-new-pin" maxlength="8" placeholder="الرمز الجديد (4-8 أرقام)" class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm font-mono">
+                            <button type="button" onclick="updateAdminPin()" class="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm">
+                                تحديث رمز الدخول
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================= الأكواد البرمجية للتفاعل ولوحة التحكم ================= -->
     <script>
-        // التحكم في قائمة الموبايل
+        const DEFAULT_SITE_DATA = {
+            "pin": "1234",
+            "whatsapp": "201013323667",
+            "phoneDisplay": "01013323667",
+            "location": "نغطي جميع مناطق الجيزة والقاهرة الكبرى",
+            "hours": "السبت - الخميس: 10:00 صباحاً حتى 10:00 مساءً",
+            "promoText": "حلول متكاملة للشركات، المصانع، المحلات، والمنازل — خصم خاص للمعاينات الجديدة",
+            "headline": "أمّن منشأتك بأحدث أنظمة المراقبة والشبكات",
+            "subheadline": "نقدم حلولاً هندسية متكاملة لتوريد وتركيب كاميرات المراقبة عالية الدقة (IP & Analog)، وتأسيس شبكات الإنترنت والسويتشات الاحترافية، مع ضمان حقيقي وخدمة صيانة سريعة في القاهرة والجيزة.",
+            "packages": [
+                {
+                    "badge": "بداية ذكية",
+                    "title": "باقة المحلات والعيادات",
+                    "price": "اطلب السعر المخفض",
+                    "subtitle": "مثالية للمحلات التجارية، الصيدليات، العيادات، والشقق السكنية.",
+                    "featured": false,
+                    "features": [
+                        "4 كاميرات عالية الدقة (داخلية / خارجية)",
+                        "جهاز تسجيل DVR 4 قنوات حديث",
+                        "هارد ديسك مخصص للمراقبة 1TB",
+                        "باور سبلاي ومستلزمات التوصيل كاملة",
+                        "ربط المشاهدة الحية على هاتفك مجاناً"
+                    ]
+                },
+                {
+                    "badge": "الأكثر طلباً للشركات",
+                    "title": "باقة الشركات والمكاتب",
+                    "price": "عرض خاص للشركات",
+                    "subtitle": "تغطية شاملة للمكاتب الإدارية، الحضانات، المطاعم، والسوبر ماركت.",
+                    "featured": true,
+                    "features": [
+                        "8 كاميرات IP أو HD فائقة الوضوح",
+                        "تقنية الرؤية الليلية الملونة والتقاط الصوت",
+                        "جهاز تسجيل 8 قنوات + هارد 2TB",
+                        "تنظيم الأسلاك داخل بوكس أو راك احترافي",
+                        "زيارة صيانة مجانية بعد 3 أشهر"
+                    ]
+                },
+                {
+                    "badge": "مشاريع كبرى",
+                    "title": "باقة المصانع والمخازن",
+                    "price": "مقايسة هندسية خاصة",
+                    "subtitle": "حلول هندسية مخصصة للمساحات الواسعة، المجمعات السكنية، والمستودعات.",
+                    "featured": false,
+                    "features": [
+                        "من 16 إلى 64 كاميرا IP بعيدة المدى",
+                        "سويتشات PoE ذكية وكبائن Racks كاملة",
+                        "ربط الفروع ببعضها وتأمين الشبكة",
+                        "سعات تخزين ضخمة (4TB - 16TB)",
+                        "عقد صيانة سنوي ودعم فني ذو أولوية"
+                    ]
+                }
+            ],
+            "portfolio": [
+                {
+                    "title": "تأسيس شبكة وراك سيرفرات متكامل",
+                    "category": "بنية شبكات وتنظيم Racks",
+                    "image": "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+                    "desc": "تجميع وتنظيم كابلات Cat6 وتركيب سويتشات PoE احترافية لشركة إدارية."
+                },
+                {
+                    "title": "منظومة كاميرات مراقبة خارجية 4K",
+                    "category": "أنظمة المراقبة الأمنية",
+                    "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=800&q=80",
+                    "desc": "تغطية شاملة للمداخل والمحيط الخارجي بكاميرات مقاومة للعوامل الجوية ورؤية ليلية ملونة."
+                },
+                {
+                    "title": "تأمين صيدلية ومخزن أدوية",
+                    "category": "حلول المتاجر والصيدليات",
+                    "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=800&q=80",
+                    "desc": "تركيب كاميرات داخلية عالية الوضوح مع تسجيل صوتي وربط مباشر على هاتف الإدارة."
+                }
+            ]
+        };
+
+        let siteData = JSON.parse(localStorage.getItem('elgebaly_tech_data')) || JSON.parse(JSON.stringify(DEFAULT_SITE_DATA));
+        let uploadedPortfolioBase64 = "";
+
+        function renderSiteContent() {
+            document.getElementById('hero-promo-text').textContent = siteData.promoText;
+            document.getElementById('hero-headline-display').innerHTML = siteData.headline;
+            document.getElementById('hero-subheadline-display').textContent = siteData.subheadline;
+            document.getElementById('footer-location-display').textContent = siteData.location;
+            document.getElementById('footer-hours-display').textContent = siteData.hours;
+            document.getElementById('footer-phone-display').textContent = siteData.phoneDisplay;
+
+            const waBaseUrl = `https://wa.me/${siteData.whatsapp}`;
+            document.getElementById('nav-whatsapp-btn').href = waBaseUrl;
+            document.getElementById('footer-whatsapp-link').href = waBaseUrl;
+            document.getElementById('floating-whatsapp-btn').href = `${waBaseUrl}?text=${encodeURIComponent('مرحباً Elgebaly Tech، أرغب في الاستفسار عن كاميرات المراقبة والشبكات')}`;
+
+            // رسم الباقات
+            const pkgContainer = document.getElementById('packages-container');
+            pkgContainer.innerHTML = siteData.packages.map((pkg) => {
+                const featuresHtml = pkg.features.map(f => `<li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> ${f}</li>`).join('');
+                if (pkg.featured) {
+                    return `
+                    <div class="p-8 rounded-3xl bg-gradient-to-b from-slate-900 to-[#0B192C] border-2 border-sky-500 flex flex-col justify-between relative shadow-2xl shadow-sky-500/15">
+                        <div class="absolute -top-4 right-8 px-4 py-1 rounded-full bg-sky-500 text-slate-950 text-xs font-black">${pkg.badge}</div>
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="px-3 py-1 rounded-lg bg-sky-500/20 text-sky-400 text-xs font-bold">${pkg.price}</span>
+                                <i class="fa-solid fa-building text-2xl text-sky-400"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-white mb-2">${pkg.title}</h3>
+                            <p class="text-slate-300 text-sm mb-6">${pkg.subtitle}</p>
+                            <ul class="space-y-3.5 text-sm text-slate-200 mb-8">${featuresHtml}</ul>
+                        </div>
+                        <a href="#contact" onclick="selectPackage('${pkg.title}')" class="block text-center py-3.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm transition-all shadow-lg shadow-sky-500/25">
+                            اطلب عرض سعر للباقة
+                        </a>
+                    </div>`;
+                }
+                return `
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col justify-between card-hover">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs font-bold">${pkg.badge}</span>
+                            <span class="text-xs font-bold text-sky-400">${pkg.price}</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-white mb-2">${pkg.title}</h3>
+                        <p class="text-slate-400 text-sm mb-6">${pkg.subtitle}</p>
+                        <ul class="space-y-3.5 text-sm text-slate-300 mb-8">${featuresHtml}</ul>
+                    </div>
+                    <a href="#contact" onclick="selectPackage('${pkg.title}')" class="block text-center py-3.5 rounded-xl bg-slate-800 hover:bg-sky-500 hover:text-slate-950 text-white font-extrabold text-sm transition-all">
+                        استفسر عن سعر الباقة
+                    </a>
+                </div>`;
+            }).join('');
+
+            // رسم معرض الأعمال
+            const portContainer = document.getElementById('portfolio-container');
+            portContainer.innerHTML = siteData.portfolio.map(item => `
+                <div class="rounded-2xl bg-slate-900 border border-slate-800 overflow-hidden card-hover flex flex-col justify-between">
+                    <div class="h-52 bg-slate-950 overflow-hidden relative">
+                        <img src="${item.image}" alt="${item.title}" onerror="this.src='https://placehold.co/600x400/0f172a/38bdf8?text=Elgebaly+Tech'" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-3 right-3 px-3 py-1 rounded-full bg-slate-950/85 border border-slate-700 text-sky-400 text-xs font-bold">${item.category}</span>
+                    </div>
+                    <div class="p-6 space-y-2">
+                        <h3 class="text-lg font-extrabold text-white">${item.title}</h3>
+                        <p class="text-xs text-slate-400 leading-relaxed">${item.desc}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // قائمة الموبايل
         const mobileMenuBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         if (mobileMenuBtn && mobileMenu) {
@@ -712,7 +942,7 @@
             });
         }
 
-        // منطق الحاسبة التفاعلية للأنظمة
+        // حاسبة الأنظمة
         let selectedPlace = "محل تجاري / عيادة";
         const placeBtns = document.querySelectorAll('.place-btn');
         const camSlider = document.getElementById('cam-slider');
@@ -772,7 +1002,7 @@
             document.getElementById('client-notes').value = `استفسار عن: ${packageName}`;
         }
 
-        // إرسال النموذج مباشرة إلى Formspree وإظهار رسالة التأكيد تحت الفورم
+        // إرسال النموذج عبر Formspree وإظهار رسالة التأكيد تحت الفورم
         const surveyForm = document.getElementById('survey-form');
         const formMessage = document.getElementById('form-message');
         const submitBtn = document.getElementById('submit-btn');
@@ -781,7 +1011,6 @@
             surveyForm.addEventListener('submit', async function(e) {
                 e.preventDefault();
                 
-                // تعطيل الزر مؤقتاً أثناء الإرسال لمنع التكرار
                 const originalBtnHtml = submitBtn.innerHTML;
                 submitBtn.disabled = true;
                 submitBtn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> <span>جاري إرسال طلبك...</span>';
@@ -817,12 +1046,239 @@
                     formMessage.className = 'mt-4 p-4 rounded-xl text-center font-bold text-sm bg-rose-500/15 text-rose-300 border border-rose-500/40';
                     formMessage.classList.remove('hidden');
                 } finally {
-                    // إعادة تفعيل الزر
                     submitBtn.disabled = false;
                     submitBtn.innerHTML = originalBtnHtml;
                 }
             });
         }
+
+        // ================= اختصار الكيبورد السري Ctrl + Shift + M لفتح لوحة التحكم =================
+        document.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.shiftKey && (e.key === 'M' || e.key === 'm' || e.code === 'KeyM')) {
+                e.preventDefault();
+                document.getElementById('pin-error-msg').classList.add('hidden');
+                document.getElementById('admin-pin-input').value = '';
+                document.getElementById('admin-pin-modal').classList.remove('hidden');
+                setTimeout(() => document.getElementById('admin-pin-input').focus(), 100);
+            }
+        });
+
+        // ================= دوال لوحة تحكم الإدارة =================
+        function closeAdminAuth() {
+            document.getElementById('admin-pin-modal').classList.add('hidden');
+        }
+
+        document.getElementById('admin-pin-input').addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') verifyAdminPin();
+        });
+
+        function verifyAdminPin() {
+            const entered = document.getElementById('admin-pin-input').value;
+            if (entered === siteData.pin) {
+                closeAdminAuth();
+                openAdminPanel();
+            } else {
+                document.getElementById('pin-error-msg').classList.remove('hidden');
+            }
+        }
+
+        function openAdminPanel() {
+            populateAdminFields();
+            document.getElementById('admin-panel-modal').classList.remove('hidden');
+        }
+
+        function closeAdminPanel() {
+            document.getElementById('admin-panel-modal').classList.add('hidden');
+        }
+
+        function switchAdminTab(tabName) {
+            document.querySelectorAll('.admin-tab-content').forEach(el => el.classList.add('hidden'));
+            document.getElementById(`admin-tab-${tabName}`).classList.remove('hidden');
+
+            document.querySelectorAll('.admin-tab-btn').forEach(btn => {
+                btn.classList.remove('bg-sky-500', 'text-slate-950', 'font-extrabold');
+                btn.classList.add('bg-slate-900', 'border', 'border-slate-800', 'text-slate-300', 'font-bold');
+            });
+            const activeBtn = document.getElementById(`tab-btn-${tabName}`);
+            activeBtn.classList.remove('bg-slate-900', 'border', 'border-slate-800', 'text-slate-300', 'font-bold');
+            activeBtn.classList.add('bg-sky-500', 'text-slate-950', 'font-extrabold');
+        }
+
+        function showAdminToast(msg = "تم حفظ وتطبيق التغييرات على الموقع بنجاح!") {
+            const toast = document.getElementById('admin-toast');
+            toast.textContent = msg;
+            toast.classList.remove('hidden');
+            setTimeout(() => toast.classList.add('hidden'), 3500);
+        }
+
+        function persistAndRender(msg) {
+            localStorage.setItem('elgebaly_tech_data', JSON.stringify(siteData));
+            renderSiteContent();
+            showAdminToast(msg);
+        }
+
+        function populateAdminFields() {
+            document.getElementById('adm-whatsapp').value = siteData.whatsapp;
+            document.getElementById('adm-phone-display').value = siteData.phoneDisplay;
+            document.getElementById('adm-location').value = siteData.location;
+            document.getElementById('adm-hours').value = siteData.hours;
+            document.getElementById('adm-promo').value = siteData.promoText;
+            document.getElementById('adm-headline').value = siteData.headline;
+            document.getElementById('adm-subheadline').value = siteData.subheadline;
+
+            const pkgList = document.getElementById('adm-packages-list');
+            pkgList.innerHTML = siteData.packages.map((pkg, idx) => `
+                <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-3">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold text-sky-400">الباقة رقم ${idx + 1}</span>
+                        <label class="text-xs text-slate-300 flex items-center gap-1.5 cursor-pointer">
+                            <input type="checkbox" id="pkg-feat-${idx}" ${pkg.featured ? 'checked' : ''} class="accent-sky-500">
+                            <span>تمييز الباقة (الأكثر طلباً)</span>
+                        </label>
+                    </div>
+                    <div class="grid sm:grid-cols-3 gap-3">
+                        <input type="text" id="pkg-title-${idx}" value="${pkg.title}" placeholder="عنوان الباقة" class="p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-xs font-bold">
+                        <input type="text" id="pkg-price-${idx}" value="${pkg.price}" placeholder="السعر أو العرض" class="p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-xs">
+                        <input type="text" id="pkg-badge-${idx}" value="${pkg.badge}" placeholder="الشارة" class="p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-xs">
+                    </div>
+                    <input type="text" id="pkg-sub-${idx}" value="${pkg.subtitle}" placeholder="وصف الباقة" class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-xs">
+                    <div>
+                        <label class="block text-[11px] text-slate-400 mb-1">المميزات (كل ميزة في سطر منفصل):</label>
+                        <textarea id="pkg-items-${idx}" rows="4" class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-xs">${pkg.features.join('\n')}</textarea>
+                    </div>
+                </div>
+            `).join('');
+
+            renderAdminPortfolioList();
+        }
+
+        function saveGeneralSettings() {
+            siteData.whatsapp = document.getElementById('adm-whatsapp').value.trim() || "201013323667";
+            siteData.phoneDisplay = document.getElementById('adm-phone-display').value.trim() || "01013323667";
+            siteData.location = document.getElementById('adm-location').value.trim();
+            siteData.hours = document.getElementById('adm-hours').value.trim();
+            siteData.promoText = document.getElementById('adm-promo').value.trim();
+            siteData.headline = document.getElementById('adm-headline').value.trim();
+            siteData.subheadline = document.getElementById('adm-subheadline').value.trim();
+            persistAndRender("تم تحديث البيانات العامة ورقم الواتساب بنجاح!");
+        }
+
+        function savePackagesSettings() {
+            siteData.packages = siteData.packages.map((_, idx) => ({
+                title: document.getElementById(`pkg-title-${idx}`).value.trim(),
+                price: document.getElementById(`pkg-price-${idx}`).value.trim(),
+                badge: document.getElementById(`pkg-badge-${idx}`).value.trim(),
+                subtitle: document.getElementById(`pkg-sub-${idx}`).value.trim(),
+                featured: document.getElementById(`pkg-feat-${idx}`).checked,
+                features: document.getElementById(`pkg-items-${idx}`).value.split('\n').map(s => s.trim()).filter(Boolean)
+            }));
+            persistAndRender("تم حفظ تعديلات الباقات والأسعار بنجاح!");
+        }
+
+        function handlePortfolioImageUpload(event) {
+            const file = event.target.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                uploadedPortfolioBase64 = e.target.result;
+                document.getElementById('new-port-img').value = "تم تحميل الصورة من جهازك بنجاح";
+            };
+            reader.readAsDataURL(file);
+        }
+
+        function addPortfolioItem() {
+            const title = document.getElementById('new-port-title').value.trim();
+            const category = document.getElementById('new-port-cat').value.trim() || "أنظمة أمنية";
+            const desc = document.getElementById('new-port-desc').value.trim();
+            const urlInput = document.getElementById('new-port-img').value.trim();
+            const image = uploadedPortfolioBase64 || urlInput || "https://placehold.co/600x400/0f172a/38bdf8?text=Elgebaly+Tech";
+
+            if (!title) {
+                showAdminToast("يرجى إدخال عنوان المشروع أولاً.");
+                return;
+            }
+
+            siteData.portfolio.unshift({ title, category, image, desc });
+            uploadedPortfolioBase64 = "";
+            document.getElementById('new-port-title').value = "";
+            document.getElementById('new-port-cat').value = "";
+            document.getElementById('new-port-img').value = "";
+            document.getElementById('new-port-desc').value = "";
+            document.getElementById('new-port-file').value = "";
+
+            renderAdminPortfolioList();
+            persistAndRender("تمت إضافة المشروع إلى معرض الأعمال بنجاح!");
+        }
+
+        function deletePortfolioItem(index) {
+            siteData.portfolio.splice(index, 1);
+            renderAdminPortfolioList();
+            persistAndRender("تم حذف المشروع من معرض الأعمال.");
+        }
+
+        function renderAdminPortfolioList() {
+            const list = document.getElementById('adm-portfolio-list');
+            list.innerHTML = siteData.portfolio.map((item, idx) => `
+                <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between gap-3">
+                    <div class="flex items-center gap-3 overflow-hidden">
+                        <img src="${item.image}" class="w-14 h-14 rounded-lg object-cover shrink-0">
+                        <div class="truncate">
+                            <h5 class="text-xs font-bold text-white truncate">${item.title}</h5>
+                            <span class="text-[11px] text-sky-400">${item.category}</span>
+                        </div>
+                    </div>
+                    <button type="button" onclick="deletePortfolioItem(${idx})" class="p-2 rounded-lg bg-rose-500/15 text-rose-400 hover:bg-rose-500 hover:text-white text-xs shrink-0">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </div>
+            `).join('');
+        }
+
+        function updateAdminPin() {
+            const newPin = document.getElementById('adm-new-pin').value.trim();
+            if (newPin.length < 4) {
+                showAdminToast("يجب أن يتكون الرمز من 4 أرقام على الأقل.");
+                return;
+            }
+            siteData.pin = newPin;
+            document.getElementById('adm-new-pin').value = "";
+            persistAndRender("تم تغيير رمز الدخول السري بنجاح!");
+        }
+
+        function resetAdminData() {
+            siteData = JSON.parse(JSON.stringify(DEFAULT_SITE_DATA));
+            localStorage.removeItem('elgebaly_tech_data');
+            populateAdminFields();
+            renderSiteContent();
+            showAdminToast("تمت استعادة الإعدادات الافتراضية للموقع.");
+        }
+
+        function exportStandaloneHTML() {
+            closeAdminPanel();
+            const currentDoc = document.documentElement.cloneNode(true);
+            const scriptTags = currentDoc.querySelectorAll('script');
+            const lastScript = scriptTags[scriptTags.length - 1];
+            const serializedData = JSON.stringify(siteData, null, 4);
+            lastScript.textContent = lastScript.textContent.replace(
+                /const DEFAULT_SITE_DATA = \{[\s\S]*?\n        \};/,
+                `const DEFAULT_SITE_DATA = ${serializedData};`
+            );
+
+            const htmlContent = "<!DOCTYPE html>\n" + currentDoc.outerHTML;
+            const blob = new Blob([htmlContent], { type: "text/html;charset=utf-8" });
+            const link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "index.html";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+            openAdminPanel();
+            showAdminToast("تم تحميل ملف index.html المحدّث وجاهز للرفع على الإنترنت!");
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            renderSiteContent();
+        });
     </script>
 </body>
 </html>
