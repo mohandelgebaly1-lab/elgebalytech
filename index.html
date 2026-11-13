@@ -1930,9 +1930,34 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
 
         // إرسال النموذج مباشرة عبر Formspree إلى البريد الإلكتروني
 const surveyForm = document.getElementById('survey-form');
+
 if (surveyForm) {
-    surveyForm.action = "https://formspree.io/f/mgakoale";
-    surveyForm.method = "POST";
+    surveyForm.addEventListener('submit', async function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(surveyForm);
+        
+        try {
+            const response = await fetch(surveyForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+            
+            if (response.ok) {
+                // رسالة نجاح تظهر للعميل داخل موقعك
+                alert('تم إرسال طلبك بنجاح! سنتواصل معك قريباً.');
+                surveyForm.reset(); // مسح الحقول بعد الإرسال
+            } else {
+                alert('حدث خطأ أثناء إرسال الطلب، يرجى المحاولة مرة أخرى.');
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            alert('تعذر الاتصال، تأكد من اتصالك بالإنترنت.');
+        }
+    });
 }
         // ================= دوال لوحة تحكم الإدارة =================
         function closeAdminAuth() {
