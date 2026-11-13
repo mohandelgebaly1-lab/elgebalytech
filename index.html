@@ -1925,28 +1925,12 @@ url:e,reason:"blocked_domain_not_allowlisted"},b.parentOrigin);throw new DOMExce
             document.getElementById('client-notes').value = `استفسار عن: ${packageName}`;
         }
 
-        // إرسال النموذج والربط المباشر بالواتساب
-        const surveyForm = document.getElementById('survey-form');
-        const formFeedback = document.getElementById('form-feedback');
-
-        surveyForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            formFeedback.classList.remove('hidden');
-            sendViaWhatsApp();
-            surveyForm.reset();
-            setTimeout(() => formFeedback.classList.add('hidden'), 7000);
-        });
-
-        function sendViaWhatsApp() {
-            const name = document.getElementById('client-name').value || 'عميل جديد';
-            const phone = document.getElementById('client-phone').value || 'غير مسجل';
-            const location = document.getElementById('client-location').value || 'غير محدد';
-            const service = document.getElementById('client-service').value;
-            const notes = document.getElementById('client-notes').value || 'طلب معاينة مجانية';
-
-            const message = `مرحباً Elgebaly Tech، أرغب في طلب خدمة:%0A- الاسم/النشاط: ${encodeURIComponent(name)}%0A- رقم التواصل: ${encodeURIComponent(phone)}%0A- المنطقة: ${encodeURIComponent(location)}%0A- الخدمة: ${encodeURIComponent(service)}%0A- التفاصيل: ${encodeURIComponent(notes)}`;
-            window.open(`https://wa.me/${siteData.whatsapp}?text=${message}`, '_blank');
-        }
+        // إرسال النموذج مباشرة عبر Formspree إلى البريد الإلكتروني
+const surveyForm = document.getElementById('survey-form');
+if (surveyForm) {
+    surveyForm.action = "https://formspree.io/f/mgakoale";
+    surveyForm.method = "POST";
+}
 
         // ================= دوال لوحة تحكم الإدارة =================
         function closeAdminAuth() {
