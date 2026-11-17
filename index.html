@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
-<meta content="#060B19" name="theme-color"/>
+<meta content="#0A1220" name="theme-color"/>
 <meta content="الجبالي تيك Elgebaly Tech لحلول كاميرات المراقبة وأنظمة IP وHD وتأسيس الشبكات والصيانة للمنازل والشركات والمحلات في القاهرة والجيزة. اطلب معاينة وعرض سعر." name="description"/>
 <meta content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" name="robots"/>
 <meta content="website" property="og:type"/>
@@ -12,24 +12,20 @@
 <title>Elgebaly Tech | كاميرات مراقبة وشبكات في القاهرة والجيزة</title>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
 <script>
         tailwind.config = {
             theme: {
                 extend: {
-                    fontFamily: {
-                        sans: ['Cairo', 'sans-serif'],
-                    },
+                    fontFamily: { sans: ['"IBM Plex Sans Arabic"', 'Cairo', 'sans-serif'] },
+                    borderRadius: { 'xl': '0.5rem', '2xl': '0.75rem', '3xl': '1rem' },
                     colors: {
-                        brand: {
-                            dark: '#060B19',
-                            card: '#0F172A',
-                            border: '#1E293B',
-                            primary: '#0EA5E9',
-                            accent: '#38BDF8',
-                        }
+                        sky: { 300:'#BFDBFE', 400:'#60A5FA', 500:'#3B82F6', 600:'#2563EB', 700:'#1D4ED8' },
+                        blue: { 400:'#60A5FA', 500:'#3B82F6', 600:'#2563EB', 700:'#1D4ED8' },
+                        indigo: { 400:'#9FB4D6', 500:'#7C93BD' },
+                        slate: { 100:'#EEF1F6', 200:'#D8DEE8', 300:'#B9C2D2', 400:'#97A3B8', 500:'#6B7A94', 600:'#475671', 700:'#2A3956', 800:'#18233A', 900:'#0F1A2E', 950:'#0A1220' }
                     }
                 }
             }
@@ -38,34 +34,34 @@
 <style>
         html { scroll-padding-top: 6rem; }
         body {
-            background-color: #060B19;
+            background-color: #0A1220;
             color: #F8FAFC;
             overflow-x: hidden;
         }
         .tech-grid {
-            background-image: radial-gradient(rgba(14, 165, 233, 0.15) 1px, transparent 1px);
+            background-image: radial-gradient(rgba(59, 130, 246, 0.15) 1px, transparent 1px);
             background-size: 32px 32px;
         }
         .glow-effect {
-            box-shadow: 0 0 30px rgba(14, 165, 233, 0.25);
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.25);
         }
         .card-hover {
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .card-hover:hover {
-            transform: translateY(-6px);
-            border-color: #0EA5E9;
-            box-shadow: 0 15px 35px -10px rgba(14, 165, 233, 0.25);
+            transform: translateY(-2px);
+            border-color: #3B82F6;
+            box-shadow: 0 15px 35px -10px rgba(59, 130, 246, 0.25);
         }
         @keyframes float-slow {
             0%, 100% { transform: translateY(0px); }
             50% { transform: translateY(-12px); }
         }
-        .float-slow { animation: float-slow 6s ease-in-out infinite; }
+        .float-slow { animation: none; }
         @keyframes pulse-ring {
-            0% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.4); }
-            70% { box-shadow: 0 0 0 12px rgba(14, 165, 233, 0); }
-            100% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0); }
+            0% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4); }
+            70% { box-shadow: 0 0 0 12px rgba(59, 130, 246, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(59, 130, 246, 0); }
         }
         .pulse-ring { animation: pulse-ring 2s infinite; }
         .nav-link {
@@ -78,7 +74,7 @@
             right: 0;
             width: 0;
             height: 2px;
-            background: #0EA5E9;
+            background: #3B82F6;
             transition: width 0.25s ease;
         }
         .nav-link:hover::after {
@@ -92,7 +88,7 @@
         .fade-up-delay-1 { animation: fadeUp 0.7s ease-out 0.15s both; }
         .fade-up-delay-2 { animation: fadeUp 0.7s ease-out 0.3s both; }
         .fade-up-delay-3 { animation: fadeUp 0.7s ease-out 0.45s both; }
-        :focus-visible { outline: 3px solid #38BDF8; outline-offset: 3px; }
+        :focus-visible { outline: 3px solid #60A5FA; outline-offset: 3px; }
         img { max-width: 100%; }
         @media (prefers-reduced-motion: reduce) {
             *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
@@ -102,17 +98,17 @@
             #floating-whatsapp-btn { bottom: max(1rem, env(safe-area-inset-bottom)); left: max(1rem, env(safe-area-inset-left)); }
         }
     </style>
-<meta content="summary" name="twitter:card"/>
-<meta content="Elgebaly Tech" name="application-name"/><meta content="Elgebaly Tech" name="author"/><meta content="Elgebaly Tech | الجبالي تيك" property="og:site_name"/><meta content="https://mohandelgebaly1-lab.github.io/elgebalytech/" property="og:url"/><meta content="ar_EG" property="og:locale"/><meta content="Elgebaly Tech | كاميرات مراقبة وشبكات في القاهرة والجيزة" name="twitter:title"/><meta content="الجبالي تيك Elgebaly Tech لحلول كاميرات المراقبة وأنظمة IP وHD وتأسيس الشبكات والصيانة للمنازل والشركات والمحلات في القاهرة والجيزة. اطلب معاينة وعرض سعر." name="twitter:description"/><link href="https://mohandelgebaly1-lab.github.io/elgebalytech/" rel="canonical"/><link href="./favicon.svg" rel="icon" type="image/svg+xml"/><link href="./favicon.png" rel="icon" sizes="96x96" type="image/png"/><link href="./favicon.png" rel="apple-touch-icon"/><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://mohandelgebaly1-lab.github.io/elgebalytech/#website","url":"https://mohandelgebaly1-lab.github.io/elgebalytech/","name":"Elgebaly Tech | الجبالي تيك","alternateName":["Elgebaly Tech","الجبالي تيك","ElgebalyTech"],"inLanguage":"ar-EG"},{"@type":"Organization","@id":"https://mohandelgebaly1-lab.github.io/elgebalytech/#organization","name":"Elgebaly Tech","alternateName":"الجبالي تيك","url":"https://mohandelgebaly1-lab.github.io/elgebalytech/","telephone":"+201013323667","description":"الجبالي تيك Elgebaly Tech لحلول كاميرات المراقبة وأنظمة IP وHD وتأسيس الشبكات والصيانة للمنازل والشركات والمحلات في القاهرة والجيزة. اطلب معاينة وعرض سعر.","areaServed":[{"@type":"City","name":"القاهرة"},{"@type":"City","name":"الجيزة"}],"knowsAbout":["أنظمة كاميرات المراقبة","أنظمة المراقبة IP وHD","تأسيس شبكات الإنترنت","أنظمة التسجيل والتخزين","الصيانة الفنية"]}]}</script><style id="elgebaly-portfolio-style">
-#portfolio { background: #060B19 !important; }
-#portfolio #portfolio-container { background: #060B19 !important; }
+<meta content="summary" name="twitter:card"/><meta content="https://mohandelgebaly1-lab.github.io/elgebalytech/favicon.png" property="og:image"/><meta content="https://mohandelgebaly1-lab.github.io/elgebalytech/favicon.png" name="twitter:image"/>
+<meta content="Elgebaly Tech" name="application-name"/><meta content="Elgebaly Tech" name="author"/><meta content="Elgebaly Tech | الجبالي تيك" property="og:site_name"/><meta content="https://mohandelgebaly1-lab.github.io/elgebalytech/" property="og:url"/><meta content="ar_EG" property="og:locale"/><meta content="Elgebaly Tech | كاميرات مراقبة وشبكات في القاهرة والجيزة" name="twitter:title"/><meta content="الجبالي تيك Elgebaly Tech لحلول كاميرات المراقبة وأنظمة IP وHD وتأسيس الشبكات والصيانة للمنازل والشركات والمحلات في القاهرة والجيزة. اطلب معاينة وعرض سعر." name="twitter:description"/><link href="https://mohandelgebaly1-lab.github.io/elgebalytech/" rel="canonical"/><link href="./favicon.svg" rel="icon" type="image/svg+xml"/><link href="./favicon.png" rel="icon" sizes="96x96" type="image/png"/><link href="./favicon.png" rel="apple-touch-icon"/><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://mohandelgebaly1-lab.github.io/elgebalytech/#website","url":"https://mohandelgebaly1-lab.github.io/elgebalytech/","name":"Elgebaly Tech","alternateName":["الجبالي تيك","ElgebalyTech"],"inLanguage":"ar-EG"},{"@type":"LocalBusiness","@id":"https://mohandelgebaly1-lab.github.io/elgebalytech/#organization","image":"https://mohandelgebaly1-lab.github.io/elgebalytech/favicon.png","openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Saturday","Sunday","Monday","Tuesday","Wednesday","Thursday"],"opens":"10:00","closes":"22:00"}],"name":"Elgebaly Tech","alternateName":"الجبالي تيك","url":"https://mohandelgebaly1-lab.github.io/elgebalytech/","telephone":"+201013323667","description":"الجبالي تيك Elgebaly Tech لحلول كاميرات المراقبة وأنظمة IP وHD وتأسيس الشبكات والصيانة للمنازل والشركات والمحلات في القاهرة والجيزة. اطلب معاينة وعرض سعر.","areaServed":[{"@type":"City","name":"القاهرة"},{"@type":"City","name":"الجيزة"}],"knowsAbout":["أنظمة كاميرات المراقبة","أنظمة المراقبة IP وHD","تأسيس شبكات الإنترنت","أنظمة التسجيل والتخزين","الصيانة الفنية"]}]}</script><style id="elgebaly-portfolio-style">
+#portfolio { background: #0A1220 !important; }
+#portfolio #portfolio-container { background: #0A1220 !important; }
 #portfolio #portfolio-container > div.port-card {
   position: relative;
   border-radius: 0 !important;
   border: none !important;
-  border-left: 1px solid rgba(56, 189, 248, 0.16) !important;
+  border-left: 1px solid rgba(96, 165, 250, 0.16) !important;
   box-shadow: none !important;
-  background: #091124 !important;
+  background: #0F1A2E !important;
   min-height: 440px;
   overflow: hidden;
   opacity: 0;
@@ -125,7 +121,7 @@
 }
 #portfolio #portfolio-container > div.port-card:hover {
   transform: translateY(0) !important;
-  box-shadow: inset 0 0 0 1px rgba(56, 189, 248, 0.45) !important;
+  box-shadow: inset 0 0 0 1px rgba(96, 165, 250, 0.45) !important;
 }
 #portfolio #portfolio-container > div.port-card .port-bg-img {
   position: absolute;
@@ -143,11 +139,11 @@
 #portfolio #portfolio-container > div.port-card .port-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(6, 11, 25, 0.96) 0%, rgba(11, 25, 44, 0.68) 52%, rgba(6, 11, 25, 0.32) 100%);
+  background: linear-gradient(to top, rgba(10, 18, 32, 0.96) 0%, rgba(10, 18, 32, 0.68) 52%, rgba(10, 18, 32, 0.32) 100%);
   transition: background 0.45s ease;
 }
 #portfolio #portfolio-container > div.port-card:hover .port-overlay {
-  background: linear-gradient(to top, rgba(6, 11, 25, 0.98) 0%, rgba(12, 36, 66, 0.72) 55%, rgba(14, 165, 233, 0.22) 100%);
+  background: linear-gradient(to top, rgba(10, 18, 32, 0.98) 0%, rgba(18, 32, 56, 0.72) 55%, rgba(59, 130, 246, 0.22) 100%);
 }
 #portfolio #portfolio-container > div.port-card .port-content {
   position: relative;
@@ -169,22 +165,22 @@
   width: 56px;
   height: 56px;
   border-radius: 9999px;
-  background: linear-gradient(135deg, #0EA5E9, #2563EB);
-  color: #ffffff !important;
+  background: #3B82F6;
+  color: #0A1220 !important;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.35rem;
   margin-bottom: 1.25rem;
-  box-shadow: 0 10px 25px rgba(14, 165, 233, 0.4);
+  box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
   transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease;
 }
 #portfolio #portfolio-container > div.port-card:hover .port-icon-circle {
   transform: scale(1.1) rotate(-6deg);
-  box-shadow: 0 14px 30px rgba(56, 189, 248, 0.55);
+  box-shadow: 0 14px 30px rgba(96, 165, 250, 0.55);
 }
 #portfolio #portfolio-container > div.port-card .port-title {
-  color: #38BDF8 !important;
+  color: #60A5FA !important;
   font-size: 1.35rem;
   font-weight: 900;
   line-height: 1.4;
@@ -192,7 +188,7 @@
   transition: color 0.3s ease;
 }
 #portfolio #portfolio-container > div.port-card:hover .port-title {
-  color: #7DD3FC !important;
+  color: #BFDBFE !important;
 }
 #portfolio #portfolio-container > div.port-card .port-desc {
   color: rgba(226, 232, 240, 0.9) !important;
@@ -207,8 +203,8 @@
   gap: 0.55rem;
   padding: 0.6rem 1.25rem;
   border-radius: 8px;
-  border: 1px solid rgba(56, 189, 248, 0.4);
-  background: rgba(15, 23, 42, 0.65);
+  border: 1px solid rgba(96, 165, 250, 0.4);
+  background: rgba(15, 26, 46, 0.65);
   backdrop-filter: blur(6px);
   color: #ffffff !important;
   font-size: 0.82rem;
@@ -216,30 +212,37 @@
   transition: all 0.3s ease;
 }
 #portfolio #portfolio-container > div.port-card:hover .port-btn {
-  background: #0EA5E9;
-  border-color: #38BDF8;
-  color: #060B19 !important;
-  box-shadow: 0 8px 20px rgba(14, 165, 233, 0.4);
+  background: #3B82F6;
+  border-color: #60A5FA;
+  color: #0A1220 !important;
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
 }
 @media (max-width: 767px) {
   #portfolio #portfolio-container > div.port-card {
     min-height: 360px;
     border-left: none !important;
-    border-bottom: 1px solid rgba(56, 189, 248, 0.16) !important;
+    border-bottom: 1px solid rgba(96, 165, 250, 0.16) !important;
   }
   #portfolio #portfolio-container > div.port-card .port-content {
     min-height: 360px;
     padding: 2rem 1.5rem;
   }
 }
-</style><link href="https://cdn.tailwindcss.com" rel="preconnect"/><link crossorigin="anonymous" href="https://cdnjs.cloudflare.com" rel="preconnect"/></head>
+
+body{letter-spacing:0;line-height:1.7}
+h1,h2,h3{letter-spacing:-0.01em}
+.tech-grid{background-size:40px 40px}
+section[id]{scroll-margin-top:5rem}
+.card-hover:hover{box-shadow:0 12px 28px -12px rgba(0,0,0,.6)!important}
+header{box-shadow:0 1px 0 rgba(96,165,250,.12)}
+</style><link href="https://cdn.tailwindcss.com" rel="preconnect"/><link crossorigin="anonymous" href="https://cdnjs.cloudflare.com" rel="preconnect"/><noscript><style>#portfolio #portfolio-container > div.port-card{opacity:1!important;transform:none!important}</style></noscript></head>
 <body class="font-sans antialiased selection:bg-sky-500 selection:text-white">
 <!-- ================= الشريط العلوي (Navbar) ================= -->
-<header class="fixed top-0 w-full z-50 bg-[#060B19]/90 backdrop-blur-md border-b border-slate-800/80">
+<header class="fixed top-0 w-full z-50 bg-[#0A1220]/90 backdrop-blur-md border-b border-slate-800/80">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="flex justify-between items-center h-20">
 <a class="flex items-center gap-3 group" href="#">
-<div class="w-11 h-11 rounded-xl bg-gradient-to-br from-sky-500 to-blue-700 flex items-center justify-center text-white shadow-lg shadow-sky-500/30 group-hover:scale-105 transition-transform">
+<div class="w-11 h-11 rounded-xl bg-sky-500 flex items-center justify-center text-slate-950 shadow-lg shadow-sky-500/30 group-hover:scale-105 transition-transform">
 <i class="fa-solid fa-shield-halved text-xl"></i>
 </div>
 <div>
@@ -256,7 +259,7 @@
 <a class="nav-link hover:text-sky-400 transition-colors" href="#why-us">لماذا نحن؟</a>
 </nav>
 <div class="hidden md:flex items-center gap-3">
-<a class="px-4 py-2.5 rounded-xl bg-emerald-600/20 border border-emerald-500/40 hover:bg-emerald-600 text-emerald-400 hover:text-white font-bold text-sm transition-all flex items-center gap-2" href="https://wa.me/201013323667" id="nav-whatsapp-btn" rel="  e f n noopener noreferrer o p r" target="_blank">
+<a class="px-4 py-2.5 rounded-xl bg-emerald-600/20 border border-emerald-500/40 hover:bg-emerald-600 text-emerald-400 hover:text-white font-bold text-sm transition-all flex items-center gap-2" href="https://wa.me/201013323667" id="nav-whatsapp-btn" rel="noopener noreferrer" target="_blank">
 <i class="fa-brands fa-whatsapp text-base"></i>
 <span>واتساب مباشر</span>
 </a>
@@ -290,11 +293,11 @@
 <div class="grid lg:grid-cols-12 gap-12 items-center">
 <div class="lg:col-span-7 text-center lg:text-right space-y-6">
 <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/30 text-sky-400 text-xs sm:text-sm font-bold fade-up">
-<span class="w-2 h-2 rounded-full bg-sky-400 animate-ping"></span>
-<span id="hero-promo-text">حلول متكاملة للشركات، المصانع، المحلات، والمنازل — خصم خاص للمعاينات الجديدة</span>
+<span class="w-2 h-2 rounded-full bg-sky-400"></span>
+<span id="hero-promo-text">حلول متكاملة للشركات، المصانع، المحلات، والمنازل — معاينة ورفع مقاسات مجاناً</span>
 </div>
 <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black text-white leading-tight fade-up-delay-1" id="hero-headline-display">أمّن منشأتك بأحدث أنظمة المراقبة والشبكات</h1>
-<p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 fade-up-delay-2" id="hero-subheadline-display">نقدم حلولاً هندسية متكاملة لتوريد وتركيب كاميرات المراقبة عالية الدقة (IP &amp; Analog)، وتأسيس شبكات الإنترنت والسويتشات الاحترافية، مع ضمان حقيقي وخدمة صيانة سريعة في القاهرة والجيزة.</p>
+<p class="text-slate-300 text-base sm:text-lg leading-relaxed max-w-2xl mx-auto lg:mx-0 fade-up-delay-2" id="hero-subheadline-display">نقدم حلولاً هندسية متكاملة لتوريد وتركيب كاميرات المراقبة عالية الدقة (IP &amp; Analog)، وتأسيس شبكات الإنترنت والسويتشات الاحترافية، مع ضمان على الأجهزة وخدمة صيانة سريعة في القاهرة والجيزة.</p>
 <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4 fade-up-delay-3">
 <a class="w-full sm:w-auto px-8 py-4 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-base transition-all shadow-lg shadow-sky-500/30 flex items-center justify-center gap-2" href="#contact">
 <i class="fa-solid fa-compass-drafting"></i>
@@ -311,24 +314,20 @@
 <div class="text-xs sm:text-sm text-slate-400">سنوات خبرة ميدانية</div>
 </div>
 <div>
-<div class="text-2xl sm:text-3xl font-black text-sky-400">100%</div>
-<div class="text-xs sm:text-sm text-slate-400">ضمان واستبدال معتمد</div>
+<div class="text-2xl sm:text-3xl font-black text-sky-400">ضمان</div>
+<div class="text-xs sm:text-sm text-slate-400">على الأجهزة المركّبة</div>
 </div>
 <div>
 <div class="text-2xl sm:text-3xl font-black text-white">24/7</div>
-<div class="text-xs sm:text-sm text-slate-400">مراقبة حية من هاتفك</div>
+<div class="text-xs sm:text-sm text-slate-400">مشاهدة حية من هاتفك</div>
 </div>
 </div>
 </div>
 <div class="lg:col-span-5 fade-up-delay-2">
 <div class="relative rounded-3xl bg-slate-900/90 border border-slate-800 p-6 sm:p-8 glow-effect float-slow">
 <div class="flex items-center justify-between border-b border-slate-800 pb-4 mb-6">
-<div class="flex items-center gap-2">
-<span class="w-3 h-3 rounded-full bg-rose-500"></span>
-<span class="w-3 h-3 rounded-full bg-amber-400"></span>
-<span class="w-3 h-3 rounded-full bg-emerald-500"></span>
-</div>
-<span class="text-xs font-mono text-sky-400 bg-sky-500/10 px-3 py-1 rounded-full">SYSTEM STATUS: ACTIVE</span>
+<span class="text-sm font-bold text-white">لوحة المراقبة</span>
+<span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-3 py-1 rounded-md">النظام يعمل</span>
 </div>
 <div class="space-y-4">
 <div class="p-4 rounded-2xl bg-slate-950/80 border border-slate-800/90 flex items-center justify-between">
@@ -370,7 +369,7 @@
 </div>
 <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
 <span>معاينة ورفع مقاسات مجانية</span>
-<span class="text-sky-400 font-bold">توريد مباشر بأسعار الجملة</span>
+<span class="text-sky-400 font-bold">توريد أجهزة أصلية</span>
 </div>
 </div>
 </div>
@@ -397,7 +396,7 @@
                         </p>
 </div>
 <ul class="text-xs text-slate-300 space-y-2 pt-4 border-t border-slate-800/80">
-<li><i class="fa-solid fa-check text-sky-400 ml-2"></i>ماركات عالمية (Hikvision - Dahua)</li>
+<li><i class="fa-solid fa-check text-sky-400 ml-2"></i>ماركات عالمية مثل Hikvision وDahua</li>
 <li><i class="fa-solid fa-check text-sky-400 ml-2"></i>ربط كامل على الموبايل والكمبيوتر</li>
 </ul>
 </div>
@@ -483,7 +482,7 @@
 <span class="text-sky-400 font-black text-base" id="cam-count-display">4 كاميرات</span>
 </div>
 <input class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-sky-500" id="cam-slider" max="64" min="1" step="1" type="range" value="4"/>
-<div class="flex justify-between text-xs text-slate-500 mt-1">
+<div class="flex justify-between text-xs text-slate-400 mt-1">
 <span>منظومة صغيرة</span>
 <span>منظومة متوسطة</span>
 <span>مشروعات كبيرة</span>
@@ -536,26 +535,116 @@
 <div class="text-center max-w-3xl mx-auto mb-16 space-y-3">
 <span class="text-sky-400 font-bold text-sm">باقات مرنة تناسب كل ميزانية</span>
 <h2 class="text-3xl sm:text-4xl font-black text-white">باقات التأمين والشبكات الأكثر طلباً</h2>
-<p class="text-slate-400 text-sm sm:text-base">جميع الباقات تشمل التوريد، التركيب النظيف، البرمجة على الموبايل، وضمان لمدة عام كامل.</p>
+<p class="text-slate-400 text-sm sm:text-base">جميع الباقات تشمل التوريد، التركيب النظيف، البرمجة على الموبايل، وضمان على الأجهزة.</p>
 </div>
 <div class="grid lg:grid-cols-3 gap-8" id="packages-container">
-<!-- يتم تعبئة الباقات ديناميكياً -->
-</div>
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col justify-between card-hover">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs font-bold">بداية ذكية</span>
+                            <span class="text-xs font-bold text-sky-400">اطلب عرض السعر</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-white mb-2">باقة المحلات والعيادات</h3>
+                        <p class="text-slate-400 text-sm mb-6">مثالية للمحلات التجارية، الصيدليات، العيادات، والشقق السكنية.</p>
+                        <ul class="space-y-3.5 text-sm text-slate-300 mb-8"><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> 4 كاميرات عالية الدقة (داخلية / خارجية)</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> جهاز تسجيل DVR 4 قنوات حديث</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> هارد ديسك مخصص للمراقبة 1TB</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> باور سبلاي ومستلزمات التوصيل كاملة</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> ربط المشاهدة الحية على هاتفك مجاناً</li></ul>
+                    </div>
+                    <a href="#contact" data-package="باقة المحلات والعيادات" class="block text-center py-3.5 rounded-xl bg-slate-800 hover:bg-sky-500 hover:text-slate-950 text-white font-extrabold text-sm transition-all">
+                        استفسر عن سعر الباقة
+                    </a>
+                </div>
+                    <div class="p-8 rounded-3xl bg-gradient-to-b from-slate-900 to-[#111E35] border-2 border-sky-500 flex flex-col justify-between relative shadow-2xl shadow-sky-500/15">
+                        <div class="absolute -top-4 right-8 px-4 py-1 rounded-full bg-sky-500 text-slate-950 text-xs font-black">الأكثر طلباً للشركات</div>
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <span class="px-3 py-1 rounded-lg bg-sky-500/20 text-sky-400 text-xs font-bold">اطلب عرض سعر</span>
+                                <i class="fa-solid fa-building text-2xl text-sky-400"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-white mb-2">باقة الشركات والمكاتب</h3>
+                            <p class="text-slate-300 text-sm mb-6">تغطية شاملة للمكاتب الإدارية، الحضانات، المطاعم، والسوبر ماركت.</p>
+                            <ul class="space-y-3.5 text-sm text-slate-200 mb-8"><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> 8 كاميرات IP أو HD فائقة الوضوح</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> تقنية الرؤية الليلية الملونة والتقاط الصوت</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> جهاز تسجيل 8 قنوات + هارد 2TB</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> تنظيم الأسلاك داخل بوكس أو راك احترافي</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> زيارة صيانة مجانية بعد 3 أشهر</li></ul>
+                        </div>
+                        <a href="#contact" data-package="باقة الشركات والمكاتب" class="block text-center py-3.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm transition-all shadow-lg shadow-sky-500/25">
+                            اطلب عرض سعر للباقة
+                        </a>
+                    </div>
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col justify-between card-hover">
+                    <div>
+                        <div class="flex justify-between items-center mb-4">
+                            <span class="px-3 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs font-bold">مشاريع كبرى</span>
+                            <span class="text-xs font-bold text-sky-400">تصميم ومقايسة حسب المشروع</span>
+                        </div>
+                        <h3 class="text-2xl font-black text-white mb-2">حلول المشروعات الكبرى</h3>
+                        <p class="text-slate-400 text-sm mb-6">منظومات مراقبة مرنة للمصانع والمخازن والشركات والمجمعات، بتصميم قابل للتوسع وفق احتياج الموقع.</p>
+                        <ul class="space-y-3.5 text-sm text-slate-300 mb-8"><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> عدد كاميرات وتصميم تغطية حسب مساحة وطبيعة المشروع</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> أجهزة تسجيل وسويتشات PoE قابلة للتوسع</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> ربط الفروع ببعضها وتأمين الشبكة مركزياً</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> حلول تخزين مرنة حسب الجودة ومدة الاحتفاظ بالتسجيلات</li><li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> عقد صيانة سنوي ودعم فني ذو أولوية</li></ul>
+                    </div>
+                    <a href="#contact" data-package="حلول المشروعات الكبرى" class="block text-center py-3.5 rounded-xl bg-slate-800 hover:bg-sky-500 hover:text-slate-950 text-white font-extrabold text-sm transition-all">
+                        استفسر عن سعر الباقة
+                    </a>
+                </div></div>
 </div>
 </section>
 <!-- ================= قسم معرض الأعمال السابقة (Portfolio) ================= -->
 <section class="pt-20 pb-0 border-t border-slate-800/60 overflow-hidden" id="portfolio">
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center mb-14 space-y-3">
 <div class="inline-flex flex-col items-center">
-<span class="text-sky-400 font-extrabold text-sm tracking-wide">سابقة أعمالنا على أرض الواقع</span>
+<span class="text-sky-400 font-extrabold text-sm tracking-wide">نماذج من أعمالنا</span>
 <span class="w-16 h-0.5 bg-sky-500/60 rounded-full mt-1.5"></span>
 </div>
 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white">معرض التركيبات والشبكات المنفذة</h2>
-<p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">نماذج حية من دقة التقفيل وتنظيم الكابلات وتركيب الكاميرات والشبكات في الشركات والمحلات والصيدليات.</p>
+<p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto leading-relaxed">أمثلة توضّح نوعية التركيبات والشبكات التي ننفذها للشركات والمحلات والصيدليات.</p>
 </div>
 <div class="w-full grid grid-cols-1 md:grid-cols-3 gap-0 bg-slate-950" id="portfolio-container">
-<!-- يتم تعبئة الأعمال ديناميكياً -->
-</div>
+                <div class="port-card group" style="transition-delay: 0ms;">
+                    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="تأسيس شبكة وراك سيرفرات متكامل" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://placehold.co/800x600/0f172a/38bdf8?text=Elgebaly+Tech'" class="port-bg-img">
+                    <div class="port-overlay"></div>
+                    <div class="port-content">
+                        <div class="port-icon-circle">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <span class="text-xs font-bold text-slate-300/90 mb-1.5 tracking-wide">بنية شبكات وتنظيم Racks</span>
+                        <h3 class="port-title">تأسيس شبكة وراك سيرفرات متكامل</h3>
+                        <p class="port-desc">تجميع وتنظيم كابلات Cat6 وتركيب سويتشات PoE احترافية لشركة إدارية.</p>
+                        <a href="#contact" data-portfolio-title="تأسيس شبكة وراك سيرفرات متكامل" class="port-btn">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <span>اطلب تنفيذ مماثل</span>
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="port-card group" style="transition-delay: 140ms;">
+                    <img src="https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="منظومة كاميرات مراقبة خارجية 4K" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://placehold.co/800x600/0f172a/38bdf8?text=Elgebaly+Tech'" class="port-bg-img">
+                    <div class="port-overlay"></div>
+                    <div class="port-content">
+                        <div class="port-icon-circle">
+                            <i class="fa-solid fa-video"></i>
+                        </div>
+                        <span class="text-xs font-bold text-slate-300/90 mb-1.5 tracking-wide">أنظمة المراقبة الأمنية</span>
+                        <h3 class="port-title">منظومة كاميرات مراقبة خارجية 4K</h3>
+                        <p class="port-desc">تغطية شاملة للمداخل والمحيط الخارجي بكاميرات مقاومة للعوامل الجوية ورؤية ليلية ملونة.</p>
+                        <a href="#contact" data-portfolio-title="منظومة كاميرات مراقبة خارجية 4K" class="port-btn">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <span>اطلب تنفيذ مماثل</span>
+                        </a>
+                    </div>
+                </div>
+            
+                <div class="port-card group" style="transition-delay: 280ms;">
+                    <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="تأمين صيدلية ومخزن أدوية" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='https://placehold.co/800x600/0f172a/38bdf8?text=Elgebaly+Tech'" class="port-bg-img">
+                    <div class="port-overlay"></div>
+                    <div class="port-content">
+                        <div class="port-icon-circle">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <span class="text-xs font-bold text-slate-300/90 mb-1.5 tracking-wide">حلول المتاجر والصيدليات</span>
+                        <h3 class="port-title">تأمين صيدلية ومخزن أدوية</h3>
+                        <p class="port-desc">تركيب كاميرات داخلية عالية الوضوح مع تسجيل صوتي وربط مباشر على هاتف الإدارة.</p>
+                        <a href="#contact" data-portfolio-title="تأمين صيدلية ومخزن أدوية" class="port-btn">
+                            <i class="fa-solid fa-circle-arrow-left"></i>
+                            <span>اطلب تنفيذ مماثل</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
 </section>
 <!-- ================= قسم المميزات (Why Us) ================= -->
 <section class="py-20" id="why-us">
@@ -573,8 +662,8 @@
 <div class="grid sm:grid-cols-2 gap-4 pt-2">
 <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 card-hover">
 <i class="fa-solid fa-tags text-sky-400 text-xl mb-2"></i>
-<h4 class="font-bold text-white text-base mb-1">أسعار توريد مباشرة</h4>
-<p class="text-xs text-slate-400">نحصل على الأجهزة من المستورد مباشرة لنوفر لك أفضل سعر في السوق.</p>
+<h4 class="font-bold text-white text-base mb-1">أسعار تنافسية</h4>
+<p class="text-xs text-slate-400">نوفر لك أجهزة أصلية بأسعار تنافسية مع عرض سعر واضح قبل التنفيذ.</p>
 </div>
 <div class="p-4 rounded-2xl bg-slate-900/90 border border-slate-800 card-hover">
 <i class="fa-solid fa-wand-magic-sparkles text-sky-400 text-xl mb-2"></i>
@@ -628,11 +717,11 @@
 </div>
 </section>
 <!-- ================= قسم التواصل وطلب المعاينة (Contact Form) ================= -->
-<section class="py-24 relative overflow-hidden bg-[#060B19] border-t border-sky-500/20" id="contact">
+<section class="py-24 relative overflow-hidden bg-[#0A1220] border-t border-sky-500/20" id="contact">
 <div class="absolute inset-0 tech-grid opacity-30 pointer-events-none"></div>
 <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-[120px] pointer-events-none"></div>
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-<div class="rounded-3xl bg-[#091124] border border-sky-500/40 p-6 sm:p-12 shadow-[0_30px_70px_rgba(6,11,25,0.9),_0_0_50px_rgba(14,165,233,0.18)] relative overflow-hidden">
+<div class="rounded-3xl bg-[#0F1A2E] border border-sky-500/40 p-6 sm:p-12 shadow-[0_30px_70px_rgba(6,11,25,0.9),_0_0_50px_rgba(14,165,233,0.18)] relative overflow-hidden">
 <div class="absolute top-0 right-0 w-64 h-64 bg-sky-500/10 rounded-full blur-[80px] pointer-events-none"></div>
 <div class="text-center mb-8">
 <span class="text-sky-400 font-bold text-sm">ابدأ تأمين مكانك اليوم</span>
@@ -643,21 +732,21 @@
 <div class="grid sm:grid-cols-2 gap-5">
 <div>
 <label class="block text-xs font-bold text-slate-300 mb-2">الاسم أو اسم النشاط التجاري *</label>
-<input autocomplete="name" class="w-full p-4 rounded-xl bg-[#060B19] border border-sky-500/30 text-white text-sm focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-500/30 transition-all shadow-inner" id="client-name" maxlength="100" name="client_name" placeholder="مثال: صيدلية الشفاء / أ. محمود" required="" type="text"/>
+<input autocomplete="name" class="w-full p-4 rounded-xl bg-[#0A1220] border border-sky-500/30 text-white text-sm focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-500/30 transition-all shadow-inner" id="client-name" maxlength="100" name="client_name" placeholder="مثال: صيدلية الشفاء / أ. محمود" required="" type="text"/>
 </div>
 <div>
 <label class="block text-xs font-bold text-slate-300 mb-2">رقم الهاتف / الواتساب *</label>
-<input autocomplete="tel" class="w-full p-4 rounded-xl bg-[#060B19] border border-sky-500/30 text-white text-sm focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-500/30 text-left transition-all shadow-inner" dir="ltr" id="client-phone" inputmode="tel" maxlength="20" name="client_phone" placeholder="01xxxxxxxxx" required="" type="tel"/>
+<input autocomplete="tel" class="w-full p-4 rounded-xl bg-[#0A1220] border border-sky-500/30 text-white text-sm focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-500/30 text-left transition-all shadow-inner" dir="ltr" id="client-phone" inputmode="tel" maxlength="20" name="client_phone" placeholder="01xxxxxxxxx" required="" type="tel"/>
 </div>
 </div>
 <div class="grid sm:grid-cols-2 gap-5 mt-5">
 <div>
 <label class="block text-xs font-bold text-slate-300 mb-2">المنطقة / العنوان التقريبي *</label>
-<input autocomplete="street-address" class="w-full p-4 rounded-xl bg-[#060B19] border border-sky-500/30 text-white text-sm focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-500/30 transition-all shadow-inner" id="client-location" maxlength="160" name="client_location" placeholder="مثال: الجيزة - الدقي / فيصل / أكتوبر" required="" type="text"/>
+<input autocomplete="street-address" class="w-full p-4 rounded-xl bg-[#0A1220] border border-sky-500/30 text-white text-sm focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-500/30 transition-all shadow-inner" id="client-location" maxlength="160" name="client_location" placeholder="مثال: الجيزة - الدقي / فيصل / أكتوبر" required="" type="text"/>
 </div>
 <div>
 <label class="block text-xs font-bold text-slate-300 mb-2">نوع الخدمة المطلوبة</label>
-<select class="w-full p-4 rounded-xl bg-[#060B19] border border-sky-500/30 text-white text-sm focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-500/30 transition-all shadow-inner" id="client-service" name="client_service">
+<select class="w-full p-4 rounded-xl bg-[#0A1220] border border-sky-500/30 text-white text-sm focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-500/30 transition-all shadow-inner" id="client-service" name="client_service">
 <option value="تركيب كاميرات مراقبة جديدة">تركيب كاميرات مراقبة جديدة</option>
 <option value="تأسيس شبكة إنترنت / سويتشات / راك">تأسيس شبكة إنترنت / سويتشات / راك</option>
 <option value="صيانة وتطوير نظام قائم">صيانة وتطوير نظام قائم</option>
@@ -667,25 +756,26 @@
 </div>
 <div class="mt-5">
 <label class="block text-xs font-bold text-slate-300 mb-2">تفاصيل إضافية (عدد الكاميرات أو مساحة المكان)</label>
-<textarea class="w-full p-4 rounded-xl bg-[#060B19] border border-sky-500/30 text-white text-sm focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-500/30 transition-all shadow-inner resize-none" id="client-notes" maxlength="1200" name="client_notes" placeholder="اكتب أي تفاصيل تساعدنا في تجهيز العرض المناسب لك..." rows="3"></textarea>
+<textarea class="w-full p-4 rounded-xl bg-[#0A1220] border border-sky-500/30 text-white text-sm focus:outline-none focus:border-sky-400 focus:ring-2 focus:ring-sky-500/30 transition-all shadow-inner resize-none" id="client-notes" maxlength="1200" name="client_notes" placeholder="اكتب أي تفاصيل تساعدنا في تجهيز العرض المناسب لك..." rows="3"></textarea>
 </div>
 <div class="pt-5 grid sm:grid-cols-2 gap-4">
-<button class="w-full py-4 rounded-xl bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-400 hover:to-blue-500 text-white font-extrabold text-base transition-all shadow-[0_10px_25px_rgba(14,165,233,0.4)] hover:shadow-[0_15px_30px_rgba(14,165,233,0.6)] flex items-center justify-center gap-2" id="submit-btn" type="submit">
+<button class="w-full py-4 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-base transition-all shadow-[0_10px_25px_rgba(14,165,233,0.4)] hover:shadow-[0_15px_30px_rgba(14,165,233,0.6)] flex items-center justify-center gap-2" id="submit-btn" type="submit">
 <i class="fa-solid fa-paper-plane"></i>
 <span>تأكيد وإرسال الطلب</span>
 </button>
-<a href="https://wa.me/201013323667?text=%Dمرحباً%20Elgebaly%20Tech،%20أرغب%20في%20الاستفسار%20وطلب%20معاينة%20موقع" id="contact-whatsapp-btn" target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base transition-all shadow-[0_10px_25px_rgba(16,185,129,0.35)] flex items-center justify-center gap-2">
+<a href="https://wa.me/201013323667?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Elgebaly%20Tech%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%B7%D9%84%D8%A8%20%D9%85%D8%B9%D8%A7%D9%8A%D9%86%D8%A9%20%D9%88%D8%B9%D8%B1%D8%B6%20%D8%B3%D8%B9%D8%B1" id="contact-whatsapp-btn" target="_blank" rel="noopener noreferrer" class="w-full py-4 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-base transition-all shadow-[0_10px_25px_rgba(16,185,129,0.35)] flex items-center justify-center gap-2">
 <i class="fa-brands fa-whatsapp text-lg"></i>
 <span>إرسال عبر الواتساب فوراً</span>
 </a>
 </div>
+<p class="mt-4 text-center text-xs text-slate-400"><i class="fa-solid fa-lock ml-1"></i>بياناتك تُستخدم فقط للرد على طلبك ولا تُشارك مع أي جهة أخرى.</p>
 <div class="mt-4 hidden p-4 rounded-xl text-center font-bold text-sm" id="form-message"></div>
 </form>
 </div>
 </div>
 </section>
 <!-- ================= التذييل (Footer) ================= -->
-<footer class="bg-[#040711] border-t border-slate-900 py-12 text-sm text-slate-400">
+<footer class="bg-[#070D18] border-t border-slate-900 py-12 text-sm text-slate-400">
 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 <div class="grid md:grid-cols-3 gap-8 pb-8 border-b border-slate-800/80">
 <div class="space-y-3">
@@ -701,24 +791,19 @@
 <h4 class="font-bold text-white mb-3">نطاق الخدمة ومواعيد العمل</h4>
 <p class="text-xs"><i class="fa-solid fa-location-dot text-sky-400 ml-2"></i><span id="footer-location-display">نغطي جميع مناطق الجيزة والقاهرة الكبرى</span></p>
 <p class="text-xs"><i class="fa-solid fa-clock text-sky-400 ml-2"></i><span id="footer-hours-display">السبت - الخميس: 10:00 صباحاً حتى 10:00 مساءً</span></p>
-<p class="text-xs" dir="ltr"><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i><span id="footer-phone-display">01013323667</span></p>
+<p class="text-xs" dir="ltr"><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i><a href="tel:+201013323667" class="hover:text-sky-400"><span id="footer-phone-display">01013323667</span></a></p>
 </div>
 <div class="space-y-3">
 <h4 class="font-bold text-white mb-3">تواصل معنا رقمياً</h4>
 <div class="flex gap-3">
-<a class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-sky-500 hover:text-slate-950 flex items-center justify-center transition-colors" href="#contact">
-<i class="fa-brands fa-facebook-f"></i>
-</a>
 <a class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-emerald-500 hover:text-white flex items-center justify-center transition-colors" href="https://wa.me/201013323667" id="footer-whatsapp-link" rel="noopener noreferrer" target="_blank">
 <i class="fa-brands fa-whatsapp"></i>
 </a>
-<a class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-sky-500 hover:text-slate-950 flex items-center justify-center transition-colors" href="#contact">
-<i class="fa-brands fa-tiktok"></i>
-</a>
+<a aria-label="اتصال هاتفي" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-sky-500 hover:text-slate-950 flex items-center justify-center transition-colors" href="tel:+201013323667"><i class="fa-solid fa-phone"></i></a>
 </div>
 </div>
 </div>
-<div class="pt-6 text-center text-xs text-slate-500">
+<div class="pt-6 text-center text-xs text-slate-400">
                 جميع الحقوق محفوظة © 2026 <span class="text-slate-300 font-bold">Elgebaly Tech Security &amp; Networking</span>
 </div>
 </div>
@@ -727,186 +812,21 @@
 <a aria-label="تواصل عبر واتساب" class="fixed bottom-6 left-6 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white shadow-xl shadow-emerald-500/30 flex items-center justify-center text-2xl transition-transform hover:scale-110" href="https://wa.me/201013323667?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20Elgebaly%20Tech%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%83%D8%A7%D9%85%D9%8A%D8%B1%D8%A7%D8%AA%20%D8%A7%D9%84%D9%85%D8%B1%D8%A7%D9%82%D8%A8%D8%A9%20%D9%88%D8%A7%D9%84%D8%B4%D8%A8%D9%83%D8%A7%D8%AA" id="floating-whatsapp-btn" rel="noopener noreferrer" target="_blank">
 <i class="fa-brands fa-whatsapp"></i>
 </a>
-<!-- ================= نافذة التحقق من رمز الإدارة (تفتح بـ Ctrl + Shift + M) ================= -->
-<div class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm flex items-center justify-center p-4 hidden" id="admin-pin-modal">
-<div class="bg-slate-900 border border-slate-700 rounded-3xl max-w-sm w-full p-6 space-y-5 shadow-2xl">
-<div class="flex items-center justify-between border-b border-slate-800 pb-3">
-<h3 class="text-lg font-black text-white flex items-center gap-2">
-<i class="fa-solid fa-shield-halved text-sky-400"></i>
-<span>دخول لوحة تحكم الإدارة</span>
-</h3>
-<button class="text-slate-400 hover:text-white" onclick="closeAdminAuth()" type="button"><i class="fa-solid fa-xmark text-lg"></i></button>
-</div>
-<p class="text-xs text-slate-400">أول استخدام: أنشئ رمزًا من 4 إلى 8 أرقام. بعد ذلك استخدمه لفتح اللوحة على هذا المتصفح. هذه حماية واجهة محلية وليست بديلًا عن تسجيل دخول خادمي.</p>
-<input autocomplete="off" class="w-full p-3.5 rounded-xl bg-slate-950 border border-slate-700 text-center text-white text-xl tracking-widest font-mono focus:outline-none focus:border-sky-500" id="admin-pin-input" inputmode="numeric" maxlength="8" placeholder="أنشئ أو أدخل الرمز" type="password"/>
-<p class="hidden text-xs text-rose-400 font-bold text-center" id="pin-error-msg">رمز الدخول غير صحيح، حاول مرة أخرى.</p>
-<button class="w-full py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm transition-all" onclick="verifyAdminPin()" type="button">
-                تعيين الرمز / فتح لوحة التحكم
-            </button>
-</div>
-</div>
-<!-- ================= لوحة تحكم الإدارة الكاملة (Admin Control Panel) ================= -->
-<div class="fixed inset-0 z-50 bg-slate-950/95 backdrop-blur-md overflow-y-auto hidden" id="admin-panel-modal">
-<div class="max-w-6xl mx-auto px-4 py-8">
-<div class="flex flex-wrap items-center justify-between gap-4 bg-slate-900 border border-slate-800 p-5 rounded-2xl mb-6">
-<div class="flex items-center gap-3">
-<div class="w-10 h-10 rounded-xl bg-sky-500 text-slate-950 flex items-center justify-center font-black">
-<i class="fa-solid fa-sliders"></i>
-</div>
-<div>
-<h2 class="text-lg sm:text-xl font-black text-white">لوحة تحكم Elgebaly Tech</h2>
-<p class="text-xs text-slate-400">إدارة محتوى محلية لهذا المتصفح — لا تستخدمها كحماية أو إدارة إنتاجية</p>
-</div>
-</div>
-<div class="flex flex-wrap items-center gap-2">
-<button class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs flex items-center gap-2 transition-all" onclick="exportStandaloneHTML()" type="button">
-<i class="fa-solid fa-download"></i>
-<span>تصدير ملف الموقع HTML</span>
-</button>
-<button class="px-4 py-2.5 rounded-xl bg-rose-500/15 border border-rose-500/40 hover:bg-rose-500 text-rose-300 hover:text-white font-bold text-xs transition-all" onclick="resetAdminData()" type="button">
-                        استعادة الافتراضي
-                    </button>
-<button class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs" onclick="closeAdminPanel()" type="button">
-                        إغلاق <i class="fa-solid fa-xmark mr-1"></i>
-</button>
-</div>
-</div>
-<div class="hidden mb-6 p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/50 text-emerald-300 text-sm font-bold text-center" id="admin-toast">
-                تم حفظ وتطبيق التغييرات على الموقع بنجاح!
-            </div>
-<div class="grid lg:grid-cols-12 gap-6">
-<div class="lg:col-span-3 space-y-2">
-<button class="admin-tab-btn w-full text-right p-3.5 rounded-xl text-sm flex items-center gap-2 bg-sky-500 text-slate-950 font-extrabold" id="tab-btn-general" onclick="switchAdminTab('general')" type="button">
-<i class="fa-solid fa-address-card"></i>
-<span>بيانات التواصل والواجهة</span>
-</button>
-<button class="admin-tab-btn w-full text-right p-3.5 rounded-xl hover:bg-slate-800 text-sm flex items-center gap-2 bg-slate-900 border border-slate-800 text-slate-300 font-bold" id="tab-btn-packages" onclick="switchAdminTab('packages')" type="button">
-<i class="fa-solid fa-tags"></i>
-<span>إدارة الباقات والأسعار</span>
-</button>
-<button class="admin-tab-btn w-full text-right p-3.5 rounded-xl hover:bg-slate-800 text-sm flex items-center gap-2 bg-slate-900 border border-slate-800 text-slate-300 font-bold" id="tab-btn-portfolio" onclick="switchAdminTab('portfolio')" type="button">
-<i class="fa-solid fa-images"></i>
-<span>معرض الأعمال السابقة</span>
-</button>
-<button class="admin-tab-btn w-full text-right p-3.5 rounded-xl hover:bg-slate-800 text-sm flex items-center gap-2 bg-slate-900 border border-slate-800 text-slate-300 font-bold" id="tab-btn-security" onclick="switchAdminTab('security')" type="button">
-<i class="fa-solid fa-key"></i>
-<span>تغيير رمز الدخول (PIN)</span>
-</button>
-</div>
-<div class="lg:col-span-9 bg-slate-900 border border-slate-800 rounded-2xl p-6">
-<!-- 1. البيانات العامة -->
-<div class="admin-tab-content space-y-5" id="admin-tab-general">
-<h3 class="text-lg font-black text-white border-b border-slate-800 pb-3">تعديل بيانات التواصل والنصوص الرئيسية</h3>
-<div class="grid sm:grid-cols-2 gap-4">
-<div>
-<label class="block text-xs font-bold text-slate-300 mb-2">رقم الواتساب (بالصيغة الدولية بدون +)</label>
-<input class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm font-mono" dir="ltr" id="adm-whatsapp" type="text"/>
-</div>
-<div>
-<label class="block text-xs font-bold text-slate-300 mb-2">رقم الهاتف للعرض في الموقع</label>
-<input class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm font-mono" dir="ltr" id="adm-phone-display" type="text"/>
-</div>
-</div>
-<div class="grid sm:grid-cols-2 gap-4">
-<div>
-<label class="block text-xs font-bold text-slate-300 mb-2">نطاق التغطية الجغرافية</label>
-<input class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm" id="adm-location" type="text"/>
-</div>
-<div>
-<label class="block text-xs font-bold text-slate-300 mb-2">مواعيد العمل</label>
-<input class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm" id="adm-hours" type="text"/>
-</div>
-</div>
-<div>
-<label class="block text-xs font-bold text-slate-300 mb-2">شريط العرض الترويجي العلوي</label>
-<input class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm" id="adm-promo" type="text"/>
-</div>
-<div>
-<label class="block text-xs font-bold text-slate-300 mb-2">العنوان الرئيسي (Hero Headline)</label>
-<input class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm" id="adm-headline" type="text"/>
-</div>
-<div>
-<label class="block text-xs font-bold text-slate-300 mb-2">الوصف التعريفي أسفل العنوان</label>
-<textarea class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm" id="adm-subheadline" rows="3"></textarea>
-</div>
-<button class="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm" onclick="saveGeneralSettings()" type="button">
-                            حفظ البيانات العامة
-                        </button>
-</div>
-<!-- 2. إدارة الباقات -->
-<div class="admin-tab-content space-y-6 hidden" id="admin-tab-packages">
-<h3 class="text-lg font-black text-white border-b border-slate-800 pb-3">تعديل الباقات الثلاث وأسعارها</h3>
-<div class="space-y-6" id="adm-packages-list"></div>
-<button class="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm" onclick="savePackagesSettings()" type="button">
-                            حفظ تعديلات الباقات
-                        </button>
-</div>
-<!-- 3. معرض الأعمال -->
-<div class="admin-tab-content space-y-6 hidden" id="admin-tab-portfolio">
-<h3 class="text-lg font-black text-white border-b border-slate-800 pb-3">إضافة وتعديل صور الأعمال السابقة</h3>
-<div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-4">
-<h4 class="text-sm font-bold text-sky-400">إضافة عمل جديد للمعرض</h4>
-<div class="grid sm:grid-cols-2 gap-4">
-<div>
-<label class="block text-xs text-slate-400 mb-1">عنوان المشروع</label>
-<input class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-sm" id="new-port-title" placeholder="مثال: تركيب 8 كاميرات IP لصيدلية بالدقي" type="text"/>
-</div>
-<div>
-<label class="block text-xs text-slate-400 mb-1">التصنيف</label>
-<input class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-sm" id="new-port-cat" placeholder="مثال: كاميرات مراقبة / تنظيم راك" type="text"/>
-</div>
-</div>
-<div class="grid sm:grid-cols-2 gap-4">
-<div>
-<label class="block text-xs text-slate-400 mb-1">رابط الصورة (URL) أو ارفع صورة من جهازك</label>
-<input class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-sm" dir="ltr" id="new-port-img" placeholder="https://..." type="text"/>
-</div>
-<div>
-<label class="block text-xs text-slate-400 mb-1">أو اختر ملف صورة مباشرة</label>
-<input accept="image/*" class="w-full p-2 rounded-lg bg-slate-900 border border-slate-700 text-slate-300 text-xs" id="new-port-file" onchange="handlePortfolioImageUpload(event)" type="file"/>
-</div>
-</div>
-<div>
-<label class="block text-xs text-slate-400 mb-1">وصف مختصر للتنفيذ</label>
-<input class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-sm" id="new-port-desc" placeholder="تمديد كابلات داخل مواسير حماية وربط المشاهدة على الموبايل" type="text"/>
-</div>
-<button class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs" onclick="addPortfolioItem()" type="button">
-<i class="fa-solid fa-plus ml-1"></i> إضافة المشروع للمعرض
-                            </button>
-</div>
-<div class="grid sm:grid-cols-2 gap-4" id="adm-portfolio-list"></div>
-</div>
-<!-- 4. الأمان -->
-<div class="admin-tab-content space-y-4 hidden" id="admin-tab-security">
-<h3 class="text-lg font-black text-white border-b border-slate-800 pb-3">تغيير رمز الدخول السري (PIN)</h3>
-<p class="text-xs text-slate-400">اختر رمزاً جديداً لحماية لوحة التحكم من التعديل غير المصرح به.</p>
-<div class="max-w-xs space-y-3">
-<input class="w-full p-3 rounded-xl bg-slate-950 border border-slate-700 text-white text-sm font-mono" id="adm-new-pin" maxlength="8" placeholder="الرمز الجديد (4-8 أرقام)" type="password"/>
-<button class="px-6 py-3 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm" onclick="updateAdminPin()" type="button">
-                                تحديث رمز الدخول
-                            </button>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- ================= الأكواد البرمجية للتفاعل ولوحة التحكم ================= -->
+<!-- ================= الأكواد البرمجية للتفاعل ================= -->
 <script>
         const DEFAULT_SITE_DATA = {
-            "pin": "",
             "whatsapp": "201013323667",
             "phoneDisplay": "01013323667",
             "location": "نغطي جميع مناطق الجيزة والقاهرة الكبرى",
             "hours": "السبت - الخميس: 10:00 صباحاً حتى 10:00 مساءً",
-            "promoText": "حلول متكاملة للشركات، المصانع، المحلات، والمنازل — خصم خاص للمعاينات الجديدة",
+            "promoText": "حلول متكاملة للشركات، المصانع، المحلات، والمنازل — معاينة ورفع مقاسات مجاناً",
             "headline": "أمّن منشأتك بأحدث أنظمة المراقبة والشبكات",
-            "subheadline": "نقدم حلولاً هندسية متكاملة لتوريد وتركيب كاميرات المراقبة عالية الدقة (IP & Analog)، وتأسيس شبكات الإنترنت والسويتشات الاحترافية، مع ضمان حقيقي وخدمة صيانة سريعة في القاهرة والجيزة.",
+            "subheadline": "نقدم حلولاً هندسية متكاملة لتوريد وتركيب كاميرات المراقبة عالية الدقة (IP & Analog)، وتأسيس شبكات الإنترنت والسويتشات الاحترافية، مع ضمان على الأجهزة وخدمة صيانة سريعة في القاهرة والجيزة.",
             "packages": [
                 {
                     "badge": "بداية ذكية",
                     "title": "باقة المحلات والعيادات",
-                    "price": "اطلب السعر المخفض",
+                    "price": "اطلب عرض السعر",
                     "subtitle": "مثالية للمحلات التجارية، الصيدليات، العيادات، والشقق السكنية.",
                     "featured": false,
                     "features": [
@@ -920,7 +840,7 @@
                 {
                     "badge": "الأكثر طلباً للشركات",
                     "title": "باقة الشركات والمكاتب",
-                    "price": "عرض خاص للشركات",
+                    "price": "اطلب عرض سعر",
                     "subtitle": "تغطية شاملة للمكاتب الإدارية، الحضانات، المطاعم، والسوبر ماركت.",
                     "featured": true,
                     "features": [
@@ -982,17 +902,7 @@
             return 'https://placehold.co/600x400/0f172a/38bdf8?text=Elgebaly+Tech';
         }
 
-        function loadSiteData() {
-            try {
-                const saved = JSON.parse(localStorage.getItem('elgebaly_tech_data'));
-                return saved && typeof saved === 'object' ? { ...JSON.parse(JSON.stringify(DEFAULT_SITE_DATA)), ...saved } : JSON.parse(JSON.stringify(DEFAULT_SITE_DATA));
-            } catch (error) {
-                console.warn('تعذر قراءة إعدادات الموقع المحلية:', error);
-                return JSON.parse(JSON.stringify(DEFAULT_SITE_DATA));
-            }
-        }
-        let siteData = loadSiteData();
-        let uploadedPortfolioBase64 = "";
+        const siteData = JSON.parse(JSON.stringify(DEFAULT_SITE_DATA));
 
         function renderSiteContent() {
             document.getElementById('hero-promo-text').textContent = siteData.promoText;
@@ -1012,7 +922,7 @@
                 const featuresHtml = pkg.features.map(f => `<li class="flex items-center gap-3"><i class="fa-solid fa-circle-check text-sky-400"></i> ${escapeHTML(f)}</li>`).join('');
                 if (pkg.featured) {
                     return `
-                    <div class="p-8 rounded-3xl bg-gradient-to-b from-slate-900 to-[#0B192C] border-2 border-sky-500 flex flex-col justify-between relative shadow-2xl shadow-sky-500/15">
+                    <div class="p-8 rounded-3xl bg-gradient-to-b from-slate-900 to-[#111E35] border-2 border-sky-500 flex flex-col justify-between relative shadow-2xl shadow-sky-500/15">
                         <div class="absolute -top-4 right-8 px-4 py-1 rounded-full bg-sky-500 text-slate-950 text-xs font-black">${escapeHTML(pkg.badge)}</div>
                         <div>
                             <div class="flex justify-between items-center mb-4">
@@ -1232,257 +1142,6 @@
                 }
             });
         }
-
-        document.addEventListener('keydown', function(e) {
-            if (e.ctrlKey && e.shiftKey && (e.key === 'M' || e.key === 'm' || e.code === 'KeyM')) {
-                e.preventDefault();
-                document.getElementById('pin-error-msg').classList.add('hidden');
-                document.getElementById('pin-error-msg').textContent = 'رمز الدخول غير صحيح، حاول مرة أخرى.';
-                document.getElementById('admin-pin-input').value = '';
-                document.getElementById('admin-pin-modal').classList.remove('hidden');
-                setTimeout(() => document.getElementById('admin-pin-input').focus(), 100);
-            }
-        });
-
-        function closeAdminAuth() {
-            document.getElementById('admin-pin-modal').classList.add('hidden');
-        }
-
-        document.getElementById('admin-pin-input').addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') verifyAdminPin();
-        });
-
-        function verifyAdminPin() {
-            const entered = document.getElementById('admin-pin-input').value.trim();
-            const error = document.getElementById('pin-error-msg');
-            if (!siteData.pin) {
-                if (!/^\d{4,8}$/.test(entered)) {
-                    error.textContent = 'أنشئ رمزًا مكونًا من 4 إلى 8 أرقام.';
-                    error.classList.remove('hidden');
-                    return;
-                }
-                siteData.pin = entered;
-                try { localStorage.setItem('elgebaly_tech_data', JSON.stringify(siteData)); }
-                catch (storageError) { console.warn('تعذر حفظ رمز الإدارة محليًا:', storageError); }
-            } else if (entered !== siteData.pin) {
-                error.textContent = 'رمز الدخول غير صحيح، حاول مرة أخرى.';
-                error.classList.remove('hidden');
-                return;
-            }
-            error.classList.add('hidden');
-            closeAdminAuth();
-            openAdminPanel();
-        }
-
-        function openAdminPanel() {
-            populateAdminFields();
-            document.getElementById('admin-panel-modal').classList.remove('hidden');
-        }
-
-        function closeAdminPanel() {
-            document.getElementById('admin-panel-modal').classList.add('hidden');
-        }
-
-        function switchAdminTab(tabName) {
-            document.querySelectorAll('.admin-tab-content').forEach(el => el.classList.add('hidden'));
-            document.getElementById(`admin-tab-${tabName}`).classList.remove('hidden');
-
-            document.querySelectorAll('.admin-tab-btn').forEach(btn => {
-                btn.classList.remove('bg-sky-500', 'text-slate-950', 'font-extrabold');
-                btn.classList.add('bg-slate-900', 'border', 'border-slate-800', 'text-slate-300', 'font-bold');
-            });
-            const activeBtn = document.getElementById(`tab-btn-${tabName}`);
-            activeBtn.classList.remove('bg-slate-900', 'border', 'border-slate-800', 'text-slate-300', 'font-bold');
-            activeBtn.classList.add('bg-sky-500', 'text-slate-950', 'font-extrabold');
-        }
-
-        function showAdminToast(msg = "تم حفظ وتطبيق التغييرات على الموقع بنجاح!") {
-            const toast = document.getElementById('admin-toast');
-            toast.textContent = msg;
-            toast.classList.remove('hidden');
-            setTimeout(() => toast.classList.add('hidden'), 3500);
-        }
-
-        function persistAndRender(msg) {
-            try {
-                localStorage.setItem('elgebaly_tech_data', JSON.stringify(siteData));
-                renderSiteContent();
-                showAdminToast(msg + ' (على هذا المتصفح فقط)');
-            } catch (error) {
-                console.error(error);
-                showAdminToast('تعذر الحفظ: مساحة التخزين ممتلئة. قلل حجم الصور أو استخدم روابط صور خارجية.');
-            }
-        }
-
-        function populateAdminFields() {
-            document.getElementById('adm-whatsapp').value = siteData.whatsapp;
-            document.getElementById('adm-phone-display').value = siteData.phoneDisplay;
-            document.getElementById('adm-location').value = siteData.location;
-            document.getElementById('adm-hours').value = siteData.hours;
-            document.getElementById('adm-promo').value = siteData.promoText;
-            document.getElementById('adm-headline').value = siteData.headline;
-            document.getElementById('adm-subheadline').value = siteData.subheadline;
-
-            const pkgList = document.getElementById('adm-packages-list');
-            pkgList.innerHTML = siteData.packages.map((pkg, idx) => `
-                <div class="p-4 rounded-xl bg-slate-950 border border-slate-800 space-y-3">
-                    <div class="flex items-center justify-between">
-                        <span class="text-xs font-bold text-sky-400">الباقة رقم ${idx + 1}</span>
-                        <label class="text-xs text-slate-300 flex items-center gap-1.5 cursor-pointer">
-                            <input type="checkbox" id="pkg-feat-${idx}" ${pkg.featured ? 'checked' : ''} class="accent-sky-500">
-                            <span>تمييز الباقة (الأكثر طلباً)</span>
-                        </label>
-                    </div>
-                    <div class="grid sm:grid-cols-3 gap-3">
-                        <input type="text" id="pkg-title-${idx}" value="${escapeHTML(pkg.title)}" placeholder="عنوان الباقة" class="p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-xs font-bold">
-                        <input type="text" id="pkg-price-${idx}" value="${escapeHTML(pkg.price)}" placeholder="السعر أو العرض" class="p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-xs">
-                        <input type="text" id="pkg-badge-${idx}" value="${escapeHTML(pkg.badge)}" placeholder="الشارة" class="p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-xs">
-                    </div>
-                    <input type="text" id="pkg-sub-${idx}" value="${escapeHTML(pkg.subtitle)}" placeholder="وصف الباقة" class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-xs">
-                    <div>
-                        <label class="block text-[11px] text-slate-400 mb-1">المميزات (كل ميزة في سطر منفصل):</label>
-                        <textarea id="pkg-items-${idx}" rows="4" class="w-full p-2.5 rounded-lg bg-slate-900 border border-slate-700 text-white text-xs">${escapeHTML(pkg.features.join("\n"))}</textarea>
-                    </div>
-                </div>
-            `).join('');
-
-            renderAdminPortfolioList();
-        }
-
-        function saveGeneralSettings() {
-            const waInput = document.getElementById('adm-whatsapp').value.replace(/\D/g, '');
-            if (waInput.length < 10 || waInput.length > 15) {
-                showAdminToast('أدخل رقم واتساب دولي صحيحاً من 10 إلى 15 رقمًا.');
-                return;
-            }
-            siteData.whatsapp = waInput;
-            siteData.phoneDisplay = document.getElementById('adm-phone-display').value.trim() || "01013323667";
-            siteData.location = document.getElementById('adm-location').value.trim();
-            siteData.hours = document.getElementById('adm-hours').value.trim();
-            siteData.promoText = document.getElementById('adm-promo').value.trim();
-            siteData.headline = document.getElementById('adm-headline').value.trim();
-            siteData.subheadline = document.getElementById('adm-subheadline').value.trim();
-            persistAndRender("تم تحديث البيانات العامة ورقم الواتساب بنجاح!");
-        }
-
-        function savePackagesSettings() {
-            siteData.packages = siteData.packages.map((_, idx) => ({
-                title: document.getElementById(`pkg-title-${idx}`).value.trim(),
-                price: document.getElementById(`pkg-price-${idx}`).value.trim(),
-                badge: document.getElementById(`pkg-badge-${idx}`).value.trim(),
-                subtitle: document.getElementById(`pkg-sub-${idx}`).value.trim(),
-                featured: document.getElementById(`pkg-feat-${idx}`).checked,
-                features: document.getElementById(`pkg-items-${idx}`).value.split('\n').map(s => s.trim()).filter(Boolean)
-            }));
-            persistAndRender("تم حفظ تعديلات الباقات والأسعار بنجاح!");
-        }
-
-        function handlePortfolioImageUpload(event) {
-            const file = event.target.files[0];
-            if (!file) return;
-            if (!/^image\/(jpeg|png|webp|gif)$/i.test(file.type) || file.size > 700 * 1024) {
-                showAdminToast('اختر صورة JPG أو PNG أو WebP أو GIF بحجم لا يتجاوز 700 كيلوبايت.');
-                event.target.value = '';
-                return;
-            }
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                uploadedPortfolioBase64 = e.target.result;
-                document.getElementById('new-port-img').value = "تم تحميل الصورة من جهازك بنجاح";
-            };
-            reader.readAsDataURL(file);
-        }
-
-        function addPortfolioItem() {
-            const title = document.getElementById('new-port-title').value.trim();
-            const category = document.getElementById('new-port-cat').value.trim() || "أنظمة أمنية";
-            const desc = document.getElementById('new-port-desc').value.trim();
-            const urlInput = document.getElementById('new-port-img').value.trim();
-            const image = uploadedPortfolioBase64 || urlInput || "https://placehold.co/600x400/0f172a/38bdf8?text=Elgebaly+Tech";
-
-            if (!title) {
-                showAdminToast("يرجى إدخال عنوان المشروع أولاً.");
-                return;
-            }
-
-            siteData.portfolio.unshift({ title, category, image, desc });
-            uploadedPortfolioBase64 = "";
-            document.getElementById('new-port-title').value = "";
-            document.getElementById('new-port-cat').value = "";
-            document.getElementById('new-port-img').value = "";
-            document.getElementById('new-port-desc').value = "";
-            document.getElementById('new-port-file').value = "";
-
-            renderAdminPortfolioList();
-            persistAndRender("تمت إضافة المشروع إلى معرض الأعمال بنجاح!");
-        }
-
-        function deletePortfolioItem(index) {
-            siteData.portfolio.splice(index, 1);
-            renderAdminPortfolioList();
-            persistAndRender("تم حذف المشروع من معرض الأعمال.");
-        }
-
-        function renderAdminPortfolioList() {
-            const list = document.getElementById('adm-portfolio-list');
-            list.innerHTML = siteData.portfolio.map((item, idx) => `
-                <div class="p-3 rounded-xl bg-slate-950 border border-slate-800 flex items-center justify-between gap-3">
-                    <div class="flex items-center gap-3 overflow-hidden">
-                        <img src="${safeImageURL(item.image)}" alt="${escapeHTML(item.title)}" loading="lazy" class="w-14 h-14 rounded-lg object-cover shrink-0">
-                        <div class="truncate">
-                            <h5 class="text-xs font-bold text-white truncate">${escapeHTML(item.title)}</h5>
-                            <span class="text-[11px] text-sky-400">${escapeHTML(item.category)}</span>
-                        </div>
-                    </div>
-                    <button type="button" onclick="deletePortfolioItem(${idx})" class="p-2 rounded-lg bg-rose-500/15 text-rose-400 hover:bg-rose-500 hover:text-white text-xs shrink-0">
-                        <i class="fa-solid fa-trash"></i>
-                    </button>
-                </div>
-            `).join('');
-        }
-
-        function updateAdminPin() {
-            const newPin = document.getElementById('adm-new-pin').value.trim();
-            if (!/^\d{4,8}$/.test(newPin)) {
-                showAdminToast("يجب أن يتكون الرمز من 4 إلى 8 أرقام.");
-                return;
-            }
-            siteData.pin = newPin;
-            document.getElementById('adm-new-pin').value = "";
-            persistAndRender("تم تغيير رمز الدخول السري بنجاح!");
-        }
-
-        function resetAdminData() {
-            siteData = JSON.parse(JSON.stringify(DEFAULT_SITE_DATA));
-            localStorage.removeItem('elgebaly_tech_data');
-            populateAdminFields();
-            renderSiteContent();
-            showAdminToast("تمت استعادة الإعدادات الافتراضية للموقع.");
-        }
-
-        function exportStandaloneHTML() {
-            closeAdminPanel();
-            const currentDoc = document.documentElement.cloneNode(true);
-            const scriptTags = currentDoc.querySelectorAll('script');
-            const lastScript = scriptTags[scriptTags.length - 1];
-            const serializedData = JSON.stringify(siteData, null, 4);
-            lastScript.textContent = lastScript.textContent.replace(
-                /const DEFAULT_SITE_DATA = \{[\s\S]*?\n        \};/,
-                `const DEFAULT_SITE_DATA = ${serializedData};`
-            );
-
-            const htmlContent = "<!DOCTYPE html>\n" + currentDoc.outerHTML;
-            const blob = new Blob([htmlContent], { type: "text/html;charset=utf-8" });
-            const link = document.createElement("a");
-            link.href = URL.createObjectURL(blob);
-            link.download = "index.html";
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-            openAdminPanel();
-            showAdminToast("تم تحميل ملف index.html المحدّث وجاهز للرفع على الإنترنت!");
-        }
-
 
         function initPortfolioScrollReveal() {
             const cards = document.querySelectorAll('#portfolio-container .port-card');
