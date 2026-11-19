@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" dir="rtl" lang="ar">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+<meta content="#0A1220" name="theme-color"/>
+<meta content="متجر الجبالي تيك Elgebaly Tech: كاميرات مراقبة وأجهزة تسجيل وسويتشات وكابلات شبكات بضمان، مع توصيل وتركيب في القاهرة والجيزة." name="description"/>
+<meta content="Elgebaly Tech | الجبالي تيك" property="og:site_name"/>
+<meta content="ar_EG" property="og:locale"/>
+<link href="https://mohandelgebaly1-lab.github.io/elgebalytech/store.html" rel="canonical"/>
+<link href="./favicon.svg" rel="icon" type="image/svg+xml"/><link href="./favicon.png" rel="icon" sizes="96x96" type="image/png"/><link href="./favicon.png" rel="apple-touch-icon"/>
+<title>متجر Elgebaly Tech | كاميرات مراقبة وأجهزة شبكات</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<script>
+tailwind.config = { theme: { extend: {
+  fontFamily: { sans: ['"IBM Plex Sans Arabic"', 'Cairo', 'sans-serif'] },
+  borderRadius: { 'xl': '0.5rem', '2xl': '0.75rem', '3xl': '1rem' },
+  colors: {
+    sky: { 300:'#BFDBFE', 400:'#60A5FA', 500:'#3B82F6', 600:'#2563EB', 700:'#1D4ED8' },
+    blue: { 400:'#60A5FA', 500:'#3B82F6', 600:'#2563EB', 700:'#1D4ED8' },
+    indigo: { 400:'#9FB4D6', 500:'#7C93BD' },
+    slate: { 100:'#EEF1F6', 200:'#D8DEE8', 300:'#B9C2D2', 400:'#97A3B8', 500:'#6B7A94', 600:'#475671', 700:'#2A3956', 800:'#18233A', 900:'#0F1A2E', 950:'#0A1220' }
+  } } } }
+</script>
+<style>
+html{scroll-padding-top:6rem}
+body{background-color:#0A1220;color:#F8FAFC;overflow-x:hidden}
+.tech-grid{background-image:radial-gradient(rgba(59,130,246,.15) 1px,transparent 1px);background-size:32px 32px}
+.nav-link{position:relative}
+.nav-link::after{content:'';position:absolute;bottom:-4px;right:0;width:0;height:2px;background:#3B82F6;transition:width .25s ease}
+.nav-link:hover::after,.nav-link.is-current::after{width:100%}
+:focus-visible{outline:3px solid #60A5FA;outline-offset:3px}
+img{max-width:100%}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}}
+@media (max-width:640px){#floating-whatsapp-btn{bottom:max(1rem,env(safe-area-inset-bottom));left:max(1rem,env(safe-area-inset-left))}}
+</style>
+<style id="store-style">
+#store .store-card{transition:all .3s cubic-bezier(.4,0,.2,1)}
+#store .store-card:hover{transform:translateY(-2px);border-color:#3B82F6;box-shadow:0 15px 35px -10px rgba(59,130,246,.25)}
+.store-filter{padding:.5rem 1rem;border-radius:.5rem;background:#18233A;color:#B9C2D2;font-weight:700;font-size:.8rem;border:1px solid #2A3956;transition:all .2s}
+.store-filter:hover{border-color:#3B82F6;color:#fff}
+.store-filter.active{background:#3B82F6;color:#0A1220;border-color:#3B82F6}
+#cart-overlay{position:fixed;inset:0;background:rgba(2,6,15,.65);z-index:60;opacity:0;pointer-events:none;transition:opacity .25s}
+#cart-overlay.open{opacity:1;pointer-events:auto}
+#cart-drawer{position:fixed;top:0;bottom:0;left:0;width:min(100%,24rem);background:#0F1A2E;border-right:1px solid #2A3956;z-index:70;transform:translateX(-100%);transition:transform .3s ease;display:flex;flex-direction:column;padding-bottom:env(safe-area-inset-bottom)}
+#cart-drawer.open{transform:translateX(0)}
+#cart-fab{position:fixed;bottom:6rem;left:1.5rem;z-index:40}
+@media (max-width:640px){#cart-fab{bottom:5.5rem;left:max(1rem,env(safe-area-inset-left))}}
+</style>
+</head>
+<body class="font-sans antialiased selection:bg-sky-500 selection:text-white">
+<header class="fixed top-0 w-full z-50 bg-[#0A1220]/90 backdrop-blur-md border-b border-slate-800/80">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<a class="flex items-center gap-3 group" href="index.html">
+<div class="w-11 h-11 rounded-xl bg-sky-500 flex items-center justify-center text-slate-950 shadow-lg shadow-sky-500/30 group-hover:scale-105 transition-transform"><i class="fa-solid fa-shield-halved text-xl"></i></div>
+<div><span class="text-xl font-black tracking-wide text-white block leading-none">ELGEBALY <span class="text-sky-400">TECH</span></span>
+<span class="text-xs text-slate-400 font-semibold">الجبالي تيك للأنظمة الأمنية والشبكات</span></div>
+</a>
+<nav class="hidden md:flex items-center gap-8 text-sm font-bold text-slate-300">
+<a class="nav-link hover:text-sky-400 transition-colors" href="index.html">الرئيسية</a>
+<a class="nav-link hover:text-sky-400 transition-colors" href="index.html#services">خدماتنا</a>
+<a class="nav-link hover:text-sky-400 transition-colors" href="index.html#estimator">حاسبة الأنظمة</a>
+<a class="nav-link hover:text-sky-400 transition-colors" href="index.html#packages">الباقات</a>
+<a class="nav-link is-current text-sky-400" href="store.html" aria-current="page">المتجر</a>
+<a class="nav-link hover:text-sky-400 transition-colors" href="index.html#portfolio">معرض الأعمال</a>
+</nav>
+<div class="hidden md:flex items-center gap-3">
+<a class="px-4 py-2.5 rounded-xl bg-emerald-600/20 border border-emerald-500/40 hover:bg-emerald-600 text-emerald-400 hover:text-white font-bold text-sm transition-all flex items-center gap-2" href="https://wa.me/201013323667" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-whatsapp text-base"></i><span>واتساب مباشر</span></a>
+<a class="px-5 py-2.5 rounded-xl bg-sky-500 hover:bg-sky-400 text-slate-950 font-extrabold text-sm transition-all shadow-lg shadow-sky-500/25 flex items-center gap-2" href="index.html#contact"><i class="fa-solid fa-calendar-check"></i><span>اطلب معاينة مجانية</span></a>
+</div>
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="فتح القائمة" class="md:hidden p-2.5 rounded-xl bg-slate-800/80 text-slate-200 hover:text-sky-400 focus:outline-none" id="mobile-menu-btn" type="button"><i class="fa-solid fa-bars text-xl"></i></button>
+</div>
+</div>
+<div class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-4 pt-3 pb-6 space-y-3" id="mobile-menu">
+<a class="block py-2 px-3 rounded-lg hover:bg-slate-800 text-slate-200 font-bold" href="index.html">الرئيسية</a>
+<a class="block py-2 px-3 rounded-lg hover:bg-slate-800 text-slate-200 font-bold" href="index.html#services">خدماتنا</a>
+<a class="block py-2 px-3 rounded-lg hover:bg-slate-800 text-slate-200 font-bold" href="index.html#estimator">حاسبة الأنظمة الذكية</a>
+<a class="block py-2 px-3 rounded-lg hover:bg-slate-800 text-slate-200 font-bold" href="index.html#packages">باقات الأسعار</a>
+<a class="block py-2 px-3 rounded-lg bg-slate-800 text-sky-400 font-bold" href="store.html">المتجر</a>
+<a class="block py-2 px-3 rounded-lg hover:bg-slate-800 text-slate-200 font-bold" href="index.html#portfolio">معرض الأعمال</a>
+<a class="block text-center py-3 rounded-xl bg-sky-500 text-slate-950 font-extrabold mt-4" href="index.html#contact">اطلب معاينة مجانية الآن</a>
+</div>
+</header>
+<main class="pt-20 tech-grid min-h-screen">
+<!-- ================= المتجر (Store) ================= -->
+<section class="pt-16 pb-24 relative" id="store">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center max-w-3xl mx-auto mb-10 space-y-3">
+<span class="text-sky-400 font-bold text-sm">توريد أجهزة أصلية بضمان</span>
+<h1 class="text-3xl sm:text-4xl font-black text-white">متجر الجبالي تيك</h1>
+<p class="text-slate-400 text-sm sm:text-base">اختار الأجهزة اللي محتاجها وأرسل الطلب على واتساب، وهنأكد معاك التوفر والسعر النهائي والتوصيل أو التركيب.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-2 mb-8" id="store-filters"></div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6" id="store-grid"></div>
+<p class="text-center text-xs text-slate-500 mt-8">الأسعار بالجنيه المصري وقابلة للتغيير حسب توفر الأجهزة. الطلب يتأكد بعد التواصل معك.</p>
+</div>
+</section>
+</main>
+<button id="cart-fab" class="w-14 h-14 rounded-full bg-sky-500 hover:bg-sky-400 text-slate-950 shadow-xl shadow-sky-500/30 flex items-center justify-center text-xl relative transition-transform hover:scale-110" aria-label="فتح السلة" type="button">
+<i class="fa-solid fa-cart-shopping"></i>
+<span id="cart-count" class="absolute -top-1 -right-1 min-w-[1.25rem] h-5 px-1 rounded-full bg-white text-slate-950 text-xs font-black flex items-center justify-center hidden">0</span>
+</button>
+<div id="cart-overlay"></div>
+<aside id="cart-drawer" aria-label="سلة المشتريات" aria-hidden="true">
+<div class="flex items-center justify-between p-5 border-b border-slate-800">
+<h3 class="text-lg font-black text-white flex items-center gap-2"><i class="fa-solid fa-cart-shopping text-sky-400"></i> سلة المشتريات</h3>
+<button id="cart-close" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-200" aria-label="إغلاق" type="button"><i class="fa-solid fa-xmark"></i></button>
+</div>
+<div id="cart-items" class="flex-1 overflow-y-auto p-5 space-y-3"></div>
+<div class="p-5 border-t border-slate-800 space-y-3 bg-slate-950/60">
+<div class="flex justify-between items-center text-sm"><span class="text-slate-300 font-bold">الإجمالي</span><span id="cart-total" class="text-sky-400 font-black text-lg">0 ج.م</span></div>
+<input id="cart-name" type="text" maxlength="100" placeholder="الاسم" class="w-full p-3 rounded-xl bg-[#0A1220] border border-sky-500/30 text-white text-sm focus:outline-none focus:border-sky-400"/>
+<input id="cart-area" type="text" maxlength="160" placeholder="المنطقة / العنوان" class="w-full p-3 rounded-xl bg-[#0A1220] border border-sky-500/30 text-white text-sm focus:outline-none focus:border-sky-400"/>
+<button id="cart-send" type="button" class="w-full py-3.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-extrabold text-sm flex items-center justify-center gap-2"><i class="fa-brands fa-whatsapp text-lg"></i> إرسال الطلب على واتساب</button>
+<button id="cart-clear" type="button" class="w-full text-xs text-slate-400 hover:text-white">تفريغ السلة</button>
+</div>
+</aside>
+<footer class="bg-[#070D18] border-t border-slate-900 py-12 text-sm text-slate-400">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-3 gap-8 pb-8 border-b border-slate-800/80">
+<div class="space-y-3"><div class="flex items-center gap-2"><i class="fa-solid fa-shield-halved text-sky-400 text-xl"></i><span class="text-lg font-black text-white">ELGEBALY <span class="text-sky-400">TECH</span></span></div>
+<p class="text-xs leading-relaxed">الجبالي تيك — شريكك التقني الموثوق لتوريد وتركيب وصيانة أنظمة كاميرات المراقبة والشبكات الاحترافية.</p></div>
+<div class="space-y-2"><h4 class="font-bold text-white mb-3">نطاق الخدمة ومواعيد العمل</h4>
+<p class="text-xs"><i class="fa-solid fa-location-dot text-sky-400 ml-2"></i>نغطي جميع مناطق الجيزة والقاهرة الكبرى</p>
+<p class="text-xs"><i class="fa-solid fa-clock text-sky-400 ml-2"></i>السبت - الخميس: 10:00 صباحاً حتى 10:00 مساءً</p>
+<p class="text-xs" dir="ltr"><i class="fa-brands fa-whatsapp text-emerald-400 mr-2"></i><a href="tel:+201013323667" class="hover:text-sky-400">01013323667</a></p></div>
+<div class="space-y-3"><h4 class="font-bold text-white mb-3">روابط سريعة</h4>
+<div class="flex gap-3">
+<a class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-emerald-500 hover:text-white flex items-center justify-center transition-colors" href="https://wa.me/201013323667" rel="noopener noreferrer" target="_blank" aria-label="واتساب"><i class="fa-brands fa-whatsapp"></i></a>
+<a aria-label="اتصال هاتفي" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-sky-500 hover:text-slate-950 flex items-center justify-center transition-colors" href="tel:+201013323667"><i class="fa-solid fa-phone"></i></a>
+<a aria-label="الصفحة الرئيسية" class="w-10 h-10 rounded-xl bg-slate-900 hover:bg-sky-500 hover:text-slate-950 flex items-center justify-center transition-colors" href="index.html"><i class="fa-solid fa-house"></i></a>
+</div></div></div>
+<div class="pt-6 text-center text-xs text-slate-400">جميع الحقوق محفوظة © 2026 <span class="text-slate-300 font-bold">Elgebaly Tech Security &amp; Networking</span></div>
+</div></footer>
+<a aria-label="تواصل عبر واتساب" class="fixed bottom-6 left-6 z-40 w-14 h-14 rounded-full bg-emerald-500 hover:bg-emerald-400 text-white shadow-xl shadow-emerald-500/30 flex items-center justify-center text-2xl transition-transform hover:scale-110" href="https://wa.me/201013323667" id="floating-whatsapp-btn" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+<script>
+(function(){var b=document.getElementById('mobile-menu-btn'),m=document.getElementById('mobile-menu');
+b.addEventListener('click',function(){var h=m.classList.toggle('hidden');b.setAttribute('aria-expanded',String(!h));});})();
+</script>
+
+<script>
+/* ===== المتجر: عدّل المنتجات من هنا فقط =====
+   price: السعر بالجنيه (ضع 0 لعرض "اسأل عن السعر")
+   cat: التصنيف | icon: أيقونة Font Awesome | inStock: false لإخفاء زر الشراء */
+const STORE_PRODUCTS = [
+  { id:'cam-dome-2mp',  cat:'كاميرات',  icon:'fa-video',        name:'كاميرا داخلية Dome 2MP',        desc:'دقة Full HD، رؤية ليلية، مناسبة للمحلات والشقق.', price:650,  inStock:true },
+  { id:'cam-bullet-2mp',cat:'كاميرات',  icon:'fa-camera',       name:'كاميرا خارجية Bullet 2MP',      desc:'مقاومة للماء والغبار، رؤية ليلية حتى 30 متر.',   price:750,  inStock:true },
+  { id:'cam-ip-4mp',    cat:'كاميرات',  icon:'fa-video',        name:'كاميرا IP بدقة 4MP',            desc:'جودة عالية وتسجيل صوت، تدعم PoE.',               price:1650, inStock:true },
+  { id:'dvr-4ch',       cat:'أجهزة تسجيل', icon:'fa-hard-drive', name:'جهاز تسجيل DVR 4 قنوات',        desc:'يدعم المشاهدة من الموبايل، 5 في 1.',            price:1400, inStock:true },
+  { id:'dvr-8ch',       cat:'أجهزة تسجيل', icon:'fa-hard-drive', name:'جهاز تسجيل DVR 8 قنوات',        desc:'للمحلات والمنشآت المتوسطة.',                     price:2100, inStock:true },
+  { id:'hdd-1tb',       cat:'أجهزة تسجيل', icon:'fa-database',   name:'هارد مراقبة 1 تيرابايت',        desc:'هارد مخصص لتسجيل 24 ساعة.',                      price:1900, inStock:true },
+  { id:'switch-poe-8',  cat:'شبكات',    icon:'fa-network-wired',name:'سويتش PoE ‏8 منافذ',             desc:'لتشغيل كاميرات IP بكابل واحد.',                  price:1800, inStock:true },
+  { id:'cable-cat6',    cat:'كابلات وملحقات', icon:'fa-plug', name:'كابل Cat6 نحاس صافي (لفة 305م)', desc:'نحاس صافي للشبكات وكاميرات IP.',                 price:0,    inStock:true }
+];
+
+(function(){
+  const WA = '201013323667';
+  const KEY = 'elgebaly_cart_v1';
+  const $ = id => document.getElementById(id);
+  const fmt = n => Number(n).toLocaleString('ar-EG') + ' ج.م';
+  let cart = {};
+  try { cart = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch(e) { cart = {}; }
+  let activeCat = 'الكل';
+
+  const byId = id => STORE_PRODUCTS.find(p => p.id === id);
+  const save = () => { try { localStorage.setItem(KEY, JSON.stringify(cart)); } catch(e) {} };
+
+  function renderFilters(){
+    const cats = ['الكل', ...new Set(STORE_PRODUCTS.map(p => p.cat))];
+    $('store-filters').innerHTML = cats.map(c =>
+      `<button type="button" class="store-filter ${c===activeCat?'active':''}" data-cat="${c}">${c}</button>`).join('');
+  }
+
+  function renderGrid(){
+    const list = STORE_PRODUCTS.filter(p => activeCat==='الكل' || p.cat===activeCat);
+    $('store-grid').innerHTML = list.map(p => `
+      <div class="store-card p-5 rounded-3xl bg-slate-900 border border-slate-800 flex flex-col justify-between">
+        <div>
+          <div class="h-32 rounded-2xl bg-gradient-to-b from-slate-800 to-slate-900 border border-slate-800 flex items-center justify-center mb-4">
+            <i class="fa-solid ${p.icon} text-4xl text-sky-400"></i>
+          </div>
+          <span class="px-2.5 py-1 rounded-lg bg-slate-800 text-slate-300 text-xs font-bold">${p.cat}</span>
+          <h3 class="text-base font-black text-white mt-3 mb-1">${p.name}</h3>
+          <p class="text-slate-400 text-xs leading-relaxed mb-4">${p.desc}</p>
+        </div>
+        <div>
+          <div class="text-sky-400 font-black text-lg mb-3">${p.price>0 ? fmt(p.price) : 'اسأل عن السعر'}</div>
+          ${p.inStock
+            ? `<button type="button" data-add="${p.id}" class="w-full py-3 rounded-xl bg-slate-800 hover:bg-sky-500 hover:text-slate-950 text-white font-extrabold text-sm transition-all"><i class="fa-solid fa-cart-plus ml-1"></i> أضف للسلة</button>`
+            : `<button type="button" disabled class="w-full py-3 rounded-xl bg-slate-800 text-slate-500 font-bold text-sm cursor-not-allowed">غير متوفر حالياً</button>`}
+        </div>
+      </div>`).join('');
+  }
+
+  function renderCart(){
+    const ids = Object.keys(cart).filter(id => byId(id) && cart[id] > 0);
+    const count = ids.reduce((s,id) => s + cart[id], 0);
+    const badge = $('cart-count');
+    badge.textContent = count; badge.classList.toggle('hidden', count===0);
+
+    if(!ids.length){
+      $('cart-items').innerHTML = '<p class="text-center text-slate-400 text-sm py-10">السلة فاضية، أضف منتجات من المتجر.</p>';
+    } else {
+      $('cart-items').innerHTML = ids.map(id => {
+        const p = byId(id);
+        return `<div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+          <div class="flex justify-between gap-2 mb-2">
+            <span class="text-sm font-bold text-white">${p.name}</span>
+            <button type="button" data-remove="${id}" class="text-slate-500 hover:text-red-400" aria-label="حذف"><i class="fa-solid fa-trash"></i></button>
+          </div>
+          <div class="flex items-center justify-between">
+            <div class="flex items-center gap-2">
+              <button type="button" data-dec="${id}" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-white" aria-label="نقص">−</button>
+              <span class="w-6 text-center text-sm font-bold">${cart[id]}</span>
+              <button type="button" data-inc="${id}" class="w-8 h-8 rounded-lg bg-slate-800 hover:bg-slate-700 text-white" aria-label="زيادة">+</button>
+            </div>
+            <span class="text-xs text-sky-400 font-bold">${p.price>0 ? fmt(p.price*cart[id]) : 'السعر عند التأكيد'}</span>
+          </div></div>`;
+      }).join('');
+    }
+    const priced = ids.filter(id => byId(id).price>0);
+    const total = priced.reduce((s,id) => s + byId(id).price*cart[id], 0);
+    const hasUnpriced = ids.some(id => byId(id).price===0);
+    $('cart-total').textContent = fmt(total) + (hasUnpriced ? ' + أصناف بدون سعر' : '');
+  }
+
+  function openCart(open){
+    $('cart-drawer').classList.toggle('open', open);
+    $('cart-overlay').classList.toggle('open', open);
+    $('cart-drawer').setAttribute('aria-hidden', String(!open));
+  }
+
+  function sendOrder(){
+    const ids = Object.keys(cart).filter(id => byId(id) && cart[id] > 0);
+    if(!ids.length){ alert('السلة فاضية.'); return; }
+    const name = $('cart-name').value.trim();
+    const area = $('cart-area').value.trim();
+    let msg = 'مرحباً Elgebaly Tech، أرغب في طلب:\n\n';
+    let total = 0, unpriced = false;
+    ids.forEach((id,i) => {
+      const p = byId(id), q = cart[id];
+      if(p.price>0){ total += p.price*q; msg += `${i+1}) ${p.name} × ${q} = ${p.price*q} ج.م\n`; }
+      else { unpriced = true; msg += `${i+1}) ${p.name} × ${q} (أرجو تأكيد السعر)\n`; }
+    });
+    msg += `\nالإجمالي: ${total} ج.م${unpriced ? ' + أصناف بدون سعر' : ''}`;
+    if(name) msg += `\nالاسم: ${name}`;
+    if(area) msg += `\nالمنطقة: ${area}`;
+    window.open(`https://wa.me/${WA}?text=${encodeURIComponent(msg)}`, '_blank', 'noopener');
+  }
+
+  document.addEventListener('click', e => {
+    const t = e.target.closest('button'); if(!t) return;
+    if(t.dataset.cat){ activeCat = t.dataset.cat; renderFilters(); renderGrid(); }
+    else if(t.dataset.add){ cart[t.dataset.add] = (cart[t.dataset.add]||0)+1; save(); renderCart(); openCart(true); }
+    else if(t.dataset.inc){ cart[t.dataset.inc]++; save(); renderCart(); }
+    else if(t.dataset.dec){ cart[t.dataset.dec] = Math.max(0,(cart[t.dataset.dec]||0)-1); if(!cart[t.dataset.dec]) delete cart[t.dataset.dec]; save(); renderCart(); }
+    else if(t.dataset.remove){ delete cart[t.dataset.remove]; save(); renderCart(); }
+  });
+  $('cart-fab').addEventListener('click', () => openCart(true));
+  $('cart-close').addEventListener('click', () => openCart(false));
+  $('cart-overlay').addEventListener('click', () => openCart(false));
+  $('cart-clear').addEventListener('click', () => { cart = {}; save(); renderCart(); });
+  $('cart-send').addEventListener('click', sendOrder);
+  document.addEventListener('keydown', e => { if(e.key==='Escape') openCart(false); });
+
+  renderFilters(); renderGrid(); renderCart();
+})();
+</script>
+</body>
+</html>
